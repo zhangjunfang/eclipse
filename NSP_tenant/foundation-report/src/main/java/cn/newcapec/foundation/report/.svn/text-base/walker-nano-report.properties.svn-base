@@ -1,0 +1,12 @@
+###############################################
+#
+# Pooled DataSource configuration for ORACLE
+#
+###############################################
+pooled.datasource.oracle.MinLimit=2
+pooled.datasource.oracle.MaxLimit=5
+pooled.datasource.oracle.InitialLimit=2
+pooled.datasource.oracle.InactivityTimeout=1200
+pooled.datasource.oracle.AbandonedConnectionTimeout=900
+pooled.datasource.oracle.MaxStatementsLimit=10
+pooled.datasource.oracle.PropertyCheckInterval=60

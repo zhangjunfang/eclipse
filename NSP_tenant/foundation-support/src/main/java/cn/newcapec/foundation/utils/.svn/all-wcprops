@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/nsp/!svn/ver/921/06DevelopDesign/NSP/foundation-support/src/main/java/cn/newcapec/foundation/utils
+END
+SpringBusinessConext.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/nsp/!svn/ver/829/06DevelopDesign/NSP/foundation-support/src/main/java/cn/newcapec/foundation/utils/SpringBusinessConext.java
+END
+MultiDatasourceContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/nsp/!svn/ver/892/06DevelopDesign/NSP/foundation-support/src/main/java/cn/newcapec/foundation/utils/MultiDatasourceContext.java
+END
+UserTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/nsp/!svn/ver/892/06DevelopDesign/NSP/foundation-support/src/main/java/cn/newcapec/foundation/utils/UserTool.java
+END
+OpenSessionInViewFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/nsp/!svn/ver/874/06DevelopDesign/NSP/foundation-support/src/main/java/cn/newcapec/foundation/utils/OpenSessionInViewFilter.java
+END
+WebUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/nsp/!svn/ver/921/06DevelopDesign/NSP/foundation-support/src/main/java/cn/newcapec/foundation/utils/WebUtils.java
+END

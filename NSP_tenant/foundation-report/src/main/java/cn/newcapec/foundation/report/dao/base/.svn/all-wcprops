@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/dao/base
+END
+DatasourceDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/dao/base/DatasourceDaoImpl.java
+END
+WidgetManageDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/dao/base/WidgetManageDao.java
+END
+BaseReportManageDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/dao/base/BaseReportManageDao.java
+END
+ReportManageDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/dao/base/ReportManageDao.java
+END
+DatasetDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/dao/base/DatasetDao.java
+END
+QueryFormDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/dao/base/QueryFormDao.java
+END

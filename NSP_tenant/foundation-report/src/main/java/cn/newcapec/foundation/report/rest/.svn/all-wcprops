@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/rest
+END
+NanoReportResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/rest/NanoReportResource.java
+END
+WidgetManageResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/rest/WidgetManageResource.java
+END
+PreviewReportResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/rest/PreviewReportResource.java
+END
+DatasetManageResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/rest/DatasetManageResource.java
+END
+DsManageResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/rest/DsManageResource.java
+END
+CustomQueryResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/rest/CustomQueryResource.java
+END
+report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/rest/report.xml
+END
+ReportManageResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/rest/ReportManageResource.java
+END
+ReportViewResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/rest/ReportViewResource.java
+END

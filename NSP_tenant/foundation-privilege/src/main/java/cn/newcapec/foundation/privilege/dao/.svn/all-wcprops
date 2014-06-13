@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/nsp/!svn/ver/894/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao
+END
+UserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/nsp/!svn/ver/821/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/UserDAO.java
+END
+UserRoleDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/UserRoleDAO.java
+END
+RoleDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/RoleDAO.java
+END
+UserDepartmentDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/UserDepartmentDAO.java
+END
+DepartmentDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/nsp/!svn/ver/894/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/DepartmentDAO.java
+END
+MenuDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/nsp/!svn/ver/855/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/MenuDAO.java
+END
+DepartmentRoleDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/DepartmentRoleDAO.java
+END
+ResourceDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/nsp/!svn/ver/855/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/ResourceDAO.java
+END
+ResourcetypeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/ResourcetypeDAO.java
+END
+RoleResourceDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/RoleResourceDAO.java
+END

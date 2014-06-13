@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+body {
+	font-size:12px;
+}
+</style>
+<title>Nano报表接口（内部）调用展示</title>
+</head>
+<body>
+<table width="80%" cellpadding="0" cellspacing="0" border="0">
+#foreach($!report in $!reportUrls)
+	<tr>
+		<td><a href="$!report.reportUrl" target="_blank">$!report.name</a></td>
+	</tr>
+#end
+</table>
+<p>--------------------------------------- Nano Report Module integration(集成说明) ----------------------------------------</p>
+<p>1、系统使用JAVA语言开发，采用独立的模块化设计，整个模块只包括三个JAR包：</p>
+<ul>
+	<li>walker-infrastructure-0.2.9.jar 系统基础设施和底层类库</li>
+	<li>walker-nanoreport-core.0.1.1.jar 报表模块的功能所有后台代码</li>
+	<li>walker-nanoreport-web.jar 报表功能包含的所有素材资源：jsp/html/css/js等，在系统启动时会自动发布这些资源</li>
+</ul>
+
+<p>2、与业务系统集成，只需要把这三个包放到项目的lib中，并同时配置web.xml和数据源：</p>
+<ul>
+	<li>web.xml中加入报表入口的Servlet，如下：</li>
+	<pre>
+&nbsp;&nbsp;&lt;servlet&gt;
+    &lt;servlet-name&gt;NanoReportServlet&lt;/servlet-name&gt;
+    &lt;servlet-class>com.newcapec.nanoreport.web.DispatcherServlet&lt;/servlet-class&gt;
+    &lt;load-on-startup>1&lt;/load-on-startup&gt;
+  &lt;/servlet&gt;
+  &lt;servlet-mapping&gt;
+    &lt;servlet-name>NanoReportServlet&lt;/servlet-name&gt;
+    &lt;url-pattern>/NanoReportServlet/*&lt;/url-pattern&gt;
+  &lt;/servlet-mapping&gt;
+	</pre>
+	<li>配置数据源，如果业务使用了Spring环境则只需要配置个FactoryBean即可：</li>
+	<pre>
+	&lt;bean id="nanoReportFactoryBean" class="com.newcapec.nanoreport.NanoReportFactoryBean"&gt;
+		&lt;property name="dataSource" ref="dataSource"/&gt;
+	&lt;/bean&gt;
+	其中 dataSource 就是业务系统使用的数据库数据源接口。
+	</pre>
+</ul>
+<p>3、模块的自动化集成，模块内部完成了[报表数据库表结构]的自动初始化操作，如果在业务数据源中不存在相关表结构，模块自动初始化。</p>
+<p>4、报表模块提供了API，供集成业务调用，获取报表信息，同时便于传入相应的业务参数。</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;获取到报表数据后，业务系统可根据需要在自己的系统中随意使用，就像本示例一样。如下：
+</p>
+<pre>
+  Map&lt;String, String&gt; params = new HashMap&lt;String, String&gt;();
+	params.put("DpID", "5");
+	
+	ReportContext reportContext = ReportContextFactory.getInstance("user1", basePath);
+	reportContext.setReportParameters(params);
+	List&lt;ReportObject&gt; urls = reportContext.getPreviewRportList();
+	
+	for(ReportObject s : urls){
+		response.getWriter().write("&lt;a href='" + s.getReportUrl() + "'&gt;" + s.getName() + "&lt;/a&gt;&lt;/br&gt;");
+	}
+</pre>
+<p>----------------------------------------------------------------------------------- END </p>
+
+</body>
+</html>

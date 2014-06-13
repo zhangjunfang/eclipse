@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/nsp/!svn/ver/892/06DevelopDesign/NSP/foundation-support/src/main/java/cn/newcapec/foundation/base/dialect
+END
+NewcapecMySQLDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/nsp/!svn/ver/892/06DevelopDesign/NSP/foundation-support/src/main/java/cn/newcapec/foundation/base/dialect/NewcapecMySQLDialect.java
+END
+NewcapecOracleDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/nsp/!svn/ver/892/06DevelopDesign/NSP/foundation-support/src/main/java/cn/newcapec/foundation/base/dialect/NewcapecOracleDialect.java
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/ds
+END
+DatabaseSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/ds/DatabaseSource.java
+END
+AbstractDatabaseSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/ds/AbstractDatabaseSource.java
+END
+DataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/ds/DataSource.java
+END
+DefaultDatabaseSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/ds/DefaultDatabaseSource.java
+END
+AbstractDataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/ds/AbstractDataSource.java
+END
+OraclePooledDatabaseSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/ds/OraclePooledDatabaseSource.java
+END

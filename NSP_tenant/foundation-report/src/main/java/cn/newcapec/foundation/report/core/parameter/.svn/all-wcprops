@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/parameter
+END
+Parameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/parameter/Parameter.java
+END
+AbstractParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/parameter/AbstractParameter.java
+END
+CursorOutParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/parameter/CursorOutParameter.java
+END
+InParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/parameter/InParameter.java
+END
+OutParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/parameter/OutParameter.java
+END

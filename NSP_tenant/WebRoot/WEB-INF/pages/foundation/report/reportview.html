@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/styles/css/report/v1.0/css/zTreeStyle/zTreeStyle.css" rel="stylesheet" type="text/css">
+#parse("foundation/report/commonjs.html")
+<script type="text/javascript" src="/scripts/foundation/report/v1.0/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="/scripts/foundation/report/v1.0/supcan/binary/dynaload.js"></script>
+<script type="text/javascript">
+<!--
+	var reportId = "$reportId";
+	var dc_id = "$dc_id";
+	var bizParams = "$bizParams";
+//-->
+</script>
+<script type="text/javascript" src="/scripts/foundation/report/v1.0/ui/reportview.js"></script>
+<style type="text/css">
+	ul.ztree {margin-top: 10px;border: 1px solid #617775;background: #f0f6e4;width:220px;height:360px;overflow-y:scroll;overflow-x:auto;}
+</style>
+<title>Nano报表自定义查询</title>
+</head>
+<body style="margin: 0;padding: 0">
+	<div id="toolbar1">
+		<div>
+			<table id="queryPanel" align="center">
+				
+			</table>
+		</div>
+		<div align="center">
+			<input type="button" onClick="queryData()"   value="查询">
+			<input id="report" type="button" value="生成报表"   onClick="createReport()" >
+		</div>
+	</div>
+	<div id="grid"></div>
+	<div id="reportPanel" style="height: 2px; width: 2px;">
+		<script type="text/javascript">
+			insertReport('AF','Rebar=none; Border=none; Ruler=none; PagesTabPercent=0; SeperateBar=none');
+		</script>
+		
+	</div>
+</body>
+</html>

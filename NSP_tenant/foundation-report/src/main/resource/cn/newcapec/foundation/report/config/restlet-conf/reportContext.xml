@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<bean id="reportRoute" class="org.restlet.ext.spring.SpringRouter">
+		<property name="attachments">  
+			<map>  
+				<!-- 数据源管理  -->
+				<entry key="/ds/{method}">  
+					<bean class="org.restlet.ext.spring.SpringFinder">
+					<lookup-method name="createResource" bean="dsManageResource" />  
+					</bean>  
+				</entry>
+				
+				<!-- 数据集管理 -->
+				<entry key="/dataset/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+						<lookup-method name="createResource" bean="datasetManageResource" />  
+					</bean> 
+				</entry>
+				
+				<!-- 报表控件管理 -->
+				<entry key="/widget/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+						<lookup-method name="createResource" bean="widgetManageResource" />  
+					</bean> 
+				</entry>
+				
+				<!-- 报表设计管理 -->
+				<entry key="/design/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+						<lookup-method name="createResource" bean="reportManageResource" />  
+					</bean> 
+				</entry>
+				
+				<!-- 报表自定义查询 -->
+				<entry key="/customquery/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+						<lookup-method name="createResource" bean="customQueryResource" />  
+					</bean> 
+				</entry>
+				
+				<!-- 报表调用预览（集成DEMO） -->
+				<entry key="/preview/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+						<lookup-method name="createResource" bean="previewReportResource" />  
+					</bean> 
+				</entry>
+				
+				<!-- 报表查看（集成DEMO） -->
+				<entry key="/view/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+						<lookup-method name="createResource" bean="reportViewResource" />  
+					</bean> 
+				</entry>
+			</map>  
+		</property>  
+	</bean>  
+</beans>  

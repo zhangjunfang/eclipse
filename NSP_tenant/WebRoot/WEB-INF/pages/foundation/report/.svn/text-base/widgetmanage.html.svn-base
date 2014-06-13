@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+#parse("foundation/report/commonjs.html")
+<script type="text/javascript" src="/scripts/foundation/report/v1.0/ui/widgetmanage.js"></script>
+<title>控件管理</title>
+</head>
+<body>
+	<div id="toolbar">
+		<input type="button" id="add"  class="butbg" onclick="showAddDialog()" value="增加">
+		<input id="modify" type="button" class="butbg"  value="修改" onclick="showUpdateInfo()">
+		<input id="delete" type="button" class="butbg"  value="删除" onclick="deleteInfo()">
+	</div>
+	<div id="grid"></div>
+	<div id="widget_dialog" style="display: none">
+	<form id="widget_form">
+		<table border="0" cellpadding="0" cellspacing="0" >
+		<tr >
+            <td><font color="red">*</font>控件名称：</td>
+            <td>
+            	<input type="hidden" id="id" name="id">
+                <input name="name" type="text" id="name"  style="width: 200px" onblur="checkUnique()" datacol="yes" err="控件名称" checkexpession="NotNull"/>
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;数据集：</td>
+            <td >
+                <select name="dc_id" id="dc_id" title="请选择数据集" style="width: 206px" datacol="yes" err="数据集" checkexpession="NotNull"  onchange="findParams(this.value)" >
+                	<option value="">请选择</option>
+                </select>
+            </td>
+        </tr>
+        <tr height="30px">
+            <td>控件类型：</td>
+            <td>
+                <select name="widgetType" id="widgetType"  style="width: 206px" onchange="changeTextState(this.value)">
+					<option value="下拉框">下拉框</option>
+					<option value="下拉树">下拉树</option>
+				</select>
+            </td>
+        </tr>
+        <tr  id="widget_select_tr" height="30px"> 
+            <td>
+               Text字段：
+            </td>
+            <td>
+                <select id="textField" name="textField" style="width:206px;"></select>
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;Value字段：</td>
+            <td>
+                <select id="valueField" name="valueField" style="width:206px;"></select>
+            </td>
+        </tr>
+        <tr style="display: none" id="widget_dropdowntree_tr" height="30px">
+            <td>
+               父级字段：
+            </td>
+            <td>
+                <select id="parentField" name="parentField" style="width:206px;"></select>
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;顶级默认值：</td>
+            <td>
+                <input type="text" id="topDefault" name="topDefault" style="width:200px">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                描述：
+            </td>
+            <td colspan="3">
+                <textarea name="summary" id="summary"  style="width: 500px;
+                    height: 60px;"></textarea> 
+            </td>
+        </tr>
+    </table>
+	</form>
+</div>
+</body>
+</html>

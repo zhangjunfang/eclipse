@@ -1,0 +1,39 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="list_table">
+  <tr class="list_table_title">
+    <td style="width:50px; text-align:center">
+    	<input type="checkbox"  onclick="selectAll(this)" />
+    </td>
+    <td style="width:260px">报表名称</td>
+    <td style="width:230px">数据集</td>
+    <td style="width:70px">发布状态</td>
+    <td style="width:120px">用户</td>
+    <td style="width:*">报表描述</td>
+  </tr>
+  
+  #foreach($!map in $!pageView.records)
+  <tr style="background:#f8fbfe;">
+    <td style="text-align:center;text-indent:0">
+    	<input name="roleids" type="checkbox" value="$!map.ID" class="check_box" />
+    </td>
+    <td>$!map.NAME</td>
+    <td>$!map.dcname</td>
+  	<td>
+  		#if($!map.STATE == "1")
+  			已发布
+  		#else
+  			未发布
+  		#end
+  	</td>
+  	<td>$!map.IDENTIFIER</td>
+  	<td>$!map.SUMMARY</td>
+  </tr>
+	#end
+	<tr>
+    <td colspan="9" style="height:26px;background:url(../../../styles/css/privilege/v1.0/images/fenye_bg.png) repeat-x;">
+	  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="fenye_table">
+  <tr>
+    <td style="width:10px;"></td>
+  	#parse($paging)
+    #paging($pageView)
+  </tr>  
+</table> 

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/nsp/!svn/ver/894/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/base
+END
+BaseUserRoleDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/base/BaseUserRoleDAO.java
+END
+BaseRoleDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/nsp/!svn/ver/894/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/base/BaseRoleDAO.java
+END
+BaseUserDepartmentDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/base/BaseUserDepartmentDAO.java
+END
+BaseDepartmentDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/base/BaseDepartmentDAO.java
+END
+BaseMenuDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/base/BaseMenuDAO.java
+END
+BaseDepartmentRoleDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/base/BaseDepartmentRoleDAO.java
+END
+BaseResourceDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/base/BaseResourceDAO.java
+END
+BaseResourcetypeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/base/BaseResourcetypeDAO.java
+END
+BaseRoleResourceDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/base/BaseRoleResourceDAO.java
+END
+BaseUserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/dao/base/BaseUserDAO.java
+END

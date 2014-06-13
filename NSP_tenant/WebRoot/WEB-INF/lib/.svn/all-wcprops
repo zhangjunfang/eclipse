@@ -1,0 +1,845 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/nsp/!svn/ver/919/06DevelopDesign/NSP/WebRoot/WEB-INF/lib
+END
+axis.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/axis.jar
+END
+jcaptcha-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jcaptcha-1.0.jar
+END
+spring-tx-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-tx-3.1.4.RELEASE.jar
+END
+jakarta-oro-2.0.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jakarta-oro-2.0.8.jar
+END
+log4j.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/log4j.jar
+END
+cglib-2.2.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/cglib-2.2.2.jar
+END
+ant.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/ant.jar
+END
+javax.inject-1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/javax.inject-1.jar
+END
+jxl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jxl.jar
+END
+jul-to-slf4j-1.6.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jul-to-slf4j-1.6.6.jar
+END
+bonecp-0.7.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/bonecp-0.7.0.jar
+END
+bcprov-jdk14-141.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/bcprov-jdk14-141.jar
+END
+spring-modules-cache-0.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-modules-cache-0.8.jar
+END
+cn.newcapec.framework.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nsp/!svn/ver/822/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/cn.newcapec.framework.jar
+END
+jodd-3.3.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jodd-3.3.4.jar
+END
+XmlSchema-1.4.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/XmlSchema-1.4.7.jar
+END
+org.restlet.ext.freemarker.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/org.restlet.ext.freemarker.jar
+END
+commons-beanutils-core-1.8.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/commons-beanutils-core-1.8.3.jar
+END
+slf4j-api-1.7.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/slf4j-api-1.7.1.jar
+END
+netty-3.2.3.Final.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/netty-3.2.3.Final.jar
+END
+xwork-core-2.1.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/xwork-core-2.1.6.jar
+END
+spring-context-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-context-3.1.4.RELEASE.jar
+END
+jtds-1.2.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jtds-1.2.5.jar
+END
+c3p0-0.9.1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/c3p0-0.9.1.2.jar
+END
+com.noelios.restlet.ext.servlet_2.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/com.noelios.restlet.ext.servlet_2.5.jar
+END
+jackson-mapper-asl-1.9.12.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jackson-mapper-asl-1.9.12.jar
+END
+org.springframework.web.servlet-3.1.0.M1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/org.springframework.web.servlet-3.1.0.M1.jar
+END
+commons-configuration-1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/nsp/!svn/ver/904/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/commons-configuration-1.5.jar
+END
+ojdbc14.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/ojdbc14.jar
+END
+hibernate-annotations.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/hibernate-annotations.jar
+END
+org.restlet.ext.json_2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/org.restlet.ext.json_2.0.jar
+END
+hessian-4.0.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/hessian-4.0.7.jar
+END
+standard.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/standard.jar
+END
+aspectjweaver.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/aspectjweaver.jar
+END
+hibernate-commons-annotations.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/hibernate-commons-annotations.jar
+END
+xalan-2.7.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/xalan-2.7.1.jar
+END
+pe-enterx-guard.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/pe-enterx-guard.jar
+END
+Thumbnailator-0.3.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/Thumbnailator-0.3.3.jar
+END
+xstream-benchmark-1.3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/xstream-benchmark-1.3.1.jar
+END
+org.restlet.ext.jaxb_2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/org.restlet.ext.jaxb_2.1.jar
+END
+neethi-2.0.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/neethi-2.0.5.jar
+END
+spring-orm-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-orm-3.1.4.RELEASE.jar
+END
+ezmorph-1.0.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/ezmorph-1.0.3.jar
+END
+mysql-connector-java-5.0.4-bin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/mysql-connector-java-5.0.4-bin.jar
+END
+hibernate3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/hibernate3.jar
+END
+rt.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/rt.jar
+END
+wstx-asl-3.2.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/wstx-asl-3.2.7.jar
+END
+org.restlet.ext.spring_2.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/org.restlet.ext.spring_2.5.jar
+END
+wss4j-1.5.12.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/wss4j-1.5.12.jar
+END
+saaj-impl-1.3.12.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/saaj-impl-1.3.12.jar
+END
+cdi-api-1.1-20130403.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/cdi-api-1.1-20130403.jar
+END
+commons-email-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/commons-email-1.2.jar
+END
+bonecp-provider-0.7.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/bonecp-provider-0.7.0.jar
+END
+commons-net-1.4.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/commons-net-1.4.1.jar
+END
+xmlsec-1.4.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/xmlsec-1.4.5.jar
+END
+spring-test-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-test-3.1.4.RELEASE.jar
+END
+xpp3_min-1.1.4c.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/xpp3_min-1.1.4c.jar
+END
+xbean-spring-3.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/xbean-spring-3.7.jar
+END
+spring-jms-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-jms-3.1.4.RELEASE.jar
+END
+stax-1.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/stax-1.2.0.jar
+END
+serializer-2.7.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/serializer-2.7.1.jar
+END
+jstl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jstl.jar
+END
+commons-io-2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/commons-io-2.1.jar
+END
+jcaptcha-api-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jcaptcha-api-1.0.jar
+END
+spring-instrument-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-instrument-3.1.4.RELEASE.jar
+END
+velocity-tools-2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/velocity-tools-2.0.jar
+END
+commons-fileupload-1.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/commons-fileupload-1.2.1.jar
+END
+javax.servlet.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/javax.servlet.jar
+END
+aspectjrt.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/aspectjrt.jar
+END
+xom-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/xom-1.1.jar
+END
+aopalliance-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/aopalliance-1.0.jar
+END
+jackson-all-1.8.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jackson-all-1.8.4.jar
+END
+ejb3-persistence.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/ejb3-persistence.jar
+END
+ecj-3.7.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nsp/!svn/ver/916/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/ecj-3.7.2.jar
+END
+velocity-1.7-dep.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/velocity-1.7-dep.jar
+END
+jcl-over-slf4j-1.6.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jcl-over-slf4j-1.6.6.jar
+END
+spring-core-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-core-3.1.4.RELEASE.jar
+END
+commons-jexl-2.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/commons-jexl-2.1.1.jar
+END
+org.restlet.ext.fileupload_1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/org.restlet.ext.fileupload_1.2.jar
+END
+jta-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jta-1.1.jar
+END
+opensaml-2.5.1-1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/opensaml-2.5.1-1.jar
+END
+mysema-commons-lang-0.2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/mysema-commons-lang-0.2.4.jar
+END
+mail-1.4.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/mail-1.4.2.jar
+END
+spring-oxm-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-oxm-3.1.4.RELEASE.jar
+END
+validation-api-1.1.0.Final.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/validation-api-1.1.0.Final.jar
+END
+jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar
+END
+jdom-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jdom-1.1.jar
+END
+poi-scratchpad-3.0.1-FINAL-20070705.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/poi-scratchpad-3.0.1-FINAL-20070705.jar
+END
+httpmime-4.2.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/httpmime-4.2.3.jar
+END
+com.noelios.restlet.ext.spring_2.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/com.noelios.restlet.ext.spring_2.5.jar
+END
+commons-logging-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/commons-logging-1.1.1.jar
+END
+jsr305-1.3.9.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jsr305-1.3.9.jar
+END
+spring-web-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-web-3.1.4.RELEASE.jar
+END
+spring-asm-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-asm-3.1.4.RELEASE.jar
+END
+spring-data-commons-1.5.1.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-data-commons-1.5.1.RELEASE.jar
+END
+activation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/activation.jar
+END
+antlr-runtime-3.1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/antlr-runtime-3.1.3.jar
+END
+cglib-nodep-2.1_3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/cglib-nodep-2.1_3.jar
+END
+com.noelios.restlet.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/com.noelios.restlet.jar
+END
+spring-beans-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-beans-3.1.4.RELEASE.jar
+END
+org.restlet.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/org.restlet.jar
+END
+codegen-0.5.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/codegen-0.5.6.jar
+END
+java-core-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/java-core-2.4.jar
+END
+wsdl4j-1.6.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/wsdl4j-1.6.2.jar
+END
+spring-context-support-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-context-support-3.1.4.RELEASE.jar
+END
+dom4j-1.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/dom4j-1.6.1.jar
+END
+DdlUtils-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nsp/!svn/ver/904/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/DdlUtils-1.0.jar
+END
+httpclient-4.2.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/httpclient-4.2.3.jar
+END
+stax-api-1.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/stax-api-1.0.1.jar
+END
+xstream-1.3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/xstream-1.3.1.jar
+END
+commons-pool.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/commons-pool.jar
+END
+commons-httpclient-3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/commons-httpclient-3.0.jar
+END
+commons-collections-3.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/commons-collections-3.2.1.jar
+END
+httpcore-4.2.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/httpcore-4.2.2.jar
+END
+junit-4.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/junit-4.6.jar
+END
+org.json.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/org.json.jar
+END
+jaxen-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nsp/!svn/ver/53/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jaxen-1.1.1.jar
+END
+javassist-3.9.0.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/javassist-3.9.0.GA.jar
+END
+jcl-over-slf4j-1.7.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jcl-over-slf4j-1.7.1.jar
+END
+xml-writer-0.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/xml-writer-0.2.jar
+END
+poi-contrib-3.0.1-FINAL-20070705.jar
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/poi-contrib-3.0.1-FINAL-20070705.jar
+END
+bsh.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/bsh.jar
+END
+poi-3.0.1-FINAL-20070705.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/poi-3.0.1-FINAL-20070705.jar
+END
+spring-expression-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-expression-3.1.4.RELEASE.jar
+END
+asm-3.3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/asm-3.3.1.jar
+END
+guava-11.0.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/guava-11.0.2.jar
+END
+spring-jdbc-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-jdbc-3.1.4.RELEASE.jar
+END
+saaj-api-1.3.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/saaj-api-1.3.4.jar
+END
+inieditor.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/inieditor.jar
+END
+noggit-0.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/noggit-0.5.jar
+END
+json-lib-2.1-jdk15.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/json-lib-2.1-jdk15.jar
+END
+commons-codec-1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/commons-codec-1.5.jar
+END
+jsr250-api-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/jsr250-api-1.0.jar
+END
+antlr-2.7.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/antlr-2.7.6.jar
+END
+commons-lang-2.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/commons-lang-2.3.jar
+END
+servlet-api-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/servlet-api-2.4.jar
+END
+spring-aop-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/spring-aop-3.1.4.RELEASE.jar
+END
+commons-beanutils-1.7.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/commons-beanutils-1.7.0.jar
+END
+quartz-all-1.6.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/nsp/!svn/ver/731/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/quartz-all-1.6.5.jar
+END
+ant-contrib-1.0b3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/WebRoot/WEB-INF/lib/ant-contrib-1.0b3.jar
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/simp
+END
+OracleProceduresMetaLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/simp/OracleProceduresMetaLoader.java
+END
+ProceduresInterpretation.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/simp/ProceduresInterpretation.java
+END
+OracleProceduresInterpretation.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/simp/OracleProceduresInterpretation.java
+END
+AbstractProceduresParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/simp/AbstractProceduresParser.java
+END
+AbstractProceduresMetaLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/simp/AbstractProceduresMetaLoader.java
+END
+OracleProceduresParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/simp/OracleProceduresParser.java
+END

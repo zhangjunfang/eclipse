@@ -1,0 +1,18 @@
+.grid{cursor:default;overflow:auto;font-size:12px;}
+.grid .scrollingContent{overflow-y:auto;}
+.grid table{font-size:12px;border-collapse:collapse;width:100%;border-spacing:2px;display:table;margin-bottom:0;margin-top:0;text-indent:0;}
+.grid .grid_header table td{padding:5px;background:#F1F8FC;text-align:left;
+border-right:thin solid #AED0EA;border-bottom:thin solid #AED0EA;border-top:thin solid #AED0EA;
+word-wrap:break-word; overflow:hidden;
+}
+.grid .grid_body table td{padding:2px;text-align:left;
+border-right:1px solid #AED0EA;border-bottom:1px solid #AED0EA;overflow:hidden;text-overflow:clip;
+}
+.grid .grid_body table tr:nth-child(even){background-color:#F8FAFC;}
+.grid .grid_body table tr:hover{background-color:#E3F0F9;}
+
+.grid .paging{width:100%;overflow-x:hidden;float:left;vertical-align:middle;background:#F1F8FC;border-top:thin solid #AED0EA;}
+.grid .paging img{vertical-align:middle;cursor:pointer;}
+.grid .paging img.nocursor{cursor:default;}
+.grid .paging img.split_left{cursor:default;margin-left:3px;padding-top:2px;}
+.grid .paging img.split_right{cursor:default;margin-right:3px;padding-top:2px;}

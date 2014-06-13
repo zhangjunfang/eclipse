@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin:0;
+	padding:0;
+	font-family:"", Arial;
+	font-size:12px;
+	line-height:22px;
+	color:#666;
+	background:#FFFFFF;
+}
+html,body{
+	overflow:hidden;
+	height:100%;
+	margin:0;
+	padding:0;
+	font:14px/1.8 Georgia, Arial, Simsun;
+}
+html{
+	_padding:64px 0 24px 0;
+}
+#hd{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:54px;
+	background:#DBEBF7;
+	border-bottom:1px solid #AED0EA;
+}
+#bd{
+	position:absolute;
+	top:55px;
+	right:0;
+	bottom:24px;
+	left:0;
+	overflow:hidden;
+	width:100%;
+	_height:100%;
+}
+#side{
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	overflow:auto;
+	width:218px;
+	border-right:1px solid #AED0EA;
+	_height:100%;
+	background-color: #F1F8FC;
+}
+#main{
+	position:absolute;
+	_position:static;
+	top:0;
+	right:0;
+	bottom:0;
+	left:219px;
+	overflow:auto;
+	_height:100%;
+	_margin-left:210px;
+}
+#ft{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:23px;
+	background:#DBEBF7;
+	border-top:1px solid #AED0EA;
+}
+/* 与布局无关，一些说明性内容样式 */
+.tit-layout{
+	font-size:18px;
+	text-align:left;
+	color: #1D91CF;
+	font-family:"微软雅黑";
+	font-weight:normal;
+	font-size:30px;
+	padding-left: 20px;
+	margin:0;  
+}
+.copyright{font-weight:bold;text-align:center;}
+.maintit {
+	background-color: #F1F8FC;
+	height: 35px;
+	border-bottom:1px solid #AED0EA;
+	font-size: 12px;
+	line-height: 35px;
+	text-indent: 20px;
+}
+.maincon{
+	position: absolute;
+	left: 0px;
+	top: 36px;
+	right:0px;
+	bottom:0px;
+	border:1px solid #AED0EA;
+	margin:10px;
+	height:auto;
+	
+}

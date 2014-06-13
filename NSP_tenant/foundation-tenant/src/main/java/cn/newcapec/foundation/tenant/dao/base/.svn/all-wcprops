@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/nsp/!svn/ver/912/06DevelopDesign/NSP/foundation-tenant/src/main/java/cn/newcapec/foundation/tenant/dao/base
+END
+BaseNetTenantDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/nsp/!svn/ver/912/06DevelopDesign/NSP/foundation-tenant/src/main/java/cn/newcapec/foundation/tenant/dao/base/BaseNetTenantDAO.java
+END
+BaseNetDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/nsp/!svn/ver/912/06DevelopDesign/NSP/foundation-tenant/src/main/java/cn/newcapec/foundation/tenant/dao/base/BaseNetDAO.java
+END
+BaseTenantDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/nsp/!svn/ver/912/06DevelopDesign/NSP/foundation-tenant/src/main/java/cn/newcapec/foundation/tenant/dao/base/BaseTenantDAO.java
+END
+BaseDataSourceDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/nsp/!svn/ver/912/06DevelopDesign/NSP/foundation-tenant/src/main/java/cn/newcapec/foundation/tenant/dao/base/BaseDataSourceDAO.java
+END

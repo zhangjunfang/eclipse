@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/nsp/!svn/ver/897/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/biz
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/biz/UserService.java
+END
+UserRoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/biz/UserRoleService.java
+END
+RoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/nsp/!svn/ver/894/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/biz/RoleService.java
+END
+UserDepartmentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/biz/UserDepartmentService.java
+END
+DepartmentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/biz/DepartmentService.java
+END
+MenuService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/biz/MenuService.java
+END
+DepartmentRoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/biz/DepartmentRoleService.java
+END
+ResourceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/biz/ResourceService.java
+END

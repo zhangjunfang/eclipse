@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/nsp/!svn/ver/894/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/rest
+END
+ResourceResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/nsp/!svn/ver/855/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/rest/ResourceResource.java
+END
+ResourcetypeResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/rest/ResourcetypeResource.java
+END
+WelcomeResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/nsp/!svn/ver/855/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/rest/WelcomeResource.java
+END
+UserResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/nsp/!svn/ver/894/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/rest/UserResource.java
+END
+UserRoleResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/rest/UserRoleResource.java
+END
+RoleResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/nsp/!svn/ver/894/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/rest/RoleResource.java
+END
+DepartmentResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/nsp/!svn/ver/855/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/rest/DepartmentResource.java
+END
+MenuResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/nsp/!svn/ver/855/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/rest/MenuResource.java
+END
+PrivilegeResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/nsp/!svn/ver/850/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/rest/PrivilegeResource.java
+END

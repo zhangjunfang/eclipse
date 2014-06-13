@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--By Supcan Report -->
+<Report>
+	<WorkSheet name="Sheet" isDefaultPrint="true">
+		<Properties>
+			<BackGround bgColor="#FFFFFF" arrange="left,top" alpha="255"/>
+			<DefaultTD>
+				<TD fontIndex="0" textColor="#000000" transparent="true" leftBorder="1" topBorder="1" leftBorderColor="#C0C0C0" leftBorderStyle="solid" topBorderColor="#C0C0C0" topBorderStyle="solid" decimal="2" align="left" vAlign="middle" isProtected="false" isThousandSeparat="true" isRound="true" isPrint="true"/>
+			</DefaultTD>
+			<Other isShowZero="true" isRefOriPrecision="true" LineDistance="0" isRowHeightAutoExtendAble="true"/>
+		</Properties>
+		<Fonts>
+			<Font faceName="微软雅黑" charSet="134" height="-14" weight="400"/>
+		</Fonts>
+		<Table>
+			<Col width="140"/>
+			<Col width="140"/>
+			<Col width="140"/>
+			<Col width="140"/>
+			<Col width="140"/>
+			<Col width="140"/>
+			<Col width="140"/>
+			<Col width="140"/>
+			<Col width="140"/>
+			<Col width="140"/>
+			<Col width="15"/>
+			<TR height="24" sequence="0">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="1">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="2">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="3">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="4">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="5">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="6">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="7">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="8">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="9">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="10">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="11">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="12">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="13">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="14">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="15">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="16">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="17">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="18">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="19">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="20">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="21">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="22">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="23">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="24">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="25">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="26">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="27">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="28">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="24" sequence="29">
+				<TD col="10" topBorder="0"/>
+			</TR>
+			<TR height="15" sequence="30">
+				<TD col="0" leftBorder="0"/>
+				<TD col="1" leftBorder="0"/>
+				<TD col="2" leftBorder="0"/>
+				<TD col="3" leftBorder="0"/>
+				<TD col="4" leftBorder="0"/>
+				<TD col="5" leftBorder="0"/>
+				<TD col="6" leftBorder="0"/>
+				<TD col="7" leftBorder="0"/>
+				<TD col="8" leftBorder="0"/>
+				<TD col="9" leftBorder="0"/>
+				<TD col="10" leftBorder="0" topBorder="0"/>
+			</TR>
+		</Table>
+		<PrintPage>
+			<Paper>
+				<Margin left="19" top="25" right="19" bottom="25"/>
+			</Paper>
+			<Page isIgnoreValidBorder="false">
+				<PageCode>
+					<Font faceName="微软雅黑" charSet="134" height="-14" weight="400"/>
+				</PageCode>
+			</Page>
+		</PrintPage>
+	</WorkSheet>
+</Report>

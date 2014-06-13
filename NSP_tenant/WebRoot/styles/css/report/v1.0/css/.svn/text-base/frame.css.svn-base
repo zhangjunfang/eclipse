@@ -1,0 +1,81 @@
+@charset "utf-8";
+/*css_reset_start */
+*{
+margin:0;
+padding:0;
+}
+
+ol, ul ,li{list-style: none;} 
+img {border: 0; vertical-align:baseline;} 
+div,form,img,ul,ol,li,dl,dt,dd, {margin: 0; padding: 0; border:0; }
+li,dl{list-style-type:none;}
+table{border-collapse:collapse;border-spacing:0;}
+a{text-decoration:none; color:#666;}
+a:hover {color:#fe0000;}
+
+
+/*navbar_start*/
+
+#navbar{
+	width:218px;
+}
+#navbar .menu-head{
+	height:35px;
+	line-height:35px;
+	cursor:pointer;
+	position:relative;
+	border-bottom:1px solid #CCE2F2;
+	background-color: #F1F8FC;
+}
+#navbar .menu-head a{
+width:218px;
+height:35px;
+display:block;
+text-decoration:none;
+font-size:14px;
+text-indent:40px;
+background:url(../images/arrow.png) no-repeat 15px center;
+
+}
+#navbar .menu-head a:hover{
+	font-weight:bold;
+	background-color: #48B0E5;
+	color:#FFFFFF;
+}
+
+#navbar .menu-list .current{
+background:#48B0E5;
+font-weight:bold;
+color:#ffffff;
+
+}
+#navbar .menu-list .current a{
+background:url(../images/icons.png) no-repeat 20px center;
+font-weight:bold;
+color:#ffffff;
+}
+#navbar .menu-body{display:none;}
+#navbar .menu-body a{
+display:block;
+text-indent:40px;font-size:12px;
+text-decoration:none;
+height:30px;line-height:30px;
+background:#ffffff;
+text-decoration:none;
+}
+#navbar .menu-body a:hover{
+color:#1D91CD;
+font-weight:bold;
+text-decoration:none;
+background:#F0F7FC;
+}
+.current_a{
+color:#1D91CD;
+font-weight:bold;
+text-decoration:none;
+background:#F0F7FC;
+}
+
+/*navbar_end*/
+
+/*.footer_start*/

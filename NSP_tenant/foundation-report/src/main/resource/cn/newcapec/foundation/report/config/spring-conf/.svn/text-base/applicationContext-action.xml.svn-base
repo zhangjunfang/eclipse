@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:compass="http://www.compass-project.org/schema/spring-core-config"
+	xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:tx="http://www.springframework.org/schema/tx"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+         http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx.xsd
+	 	 http://www.compass-project.org/schema/spring-core-config http://www.compass-project.org/schema/spring-compass-core-config-2.2.xsd">
+
+ <!--  component-scan自动搜索@Component , @Controller , @Service , @Repository等标注的类 
+
+ --> 
+  
+  <context:component-scan base-package="cn.newcapec">
+  </context:component-scan>
+ 
+	<!-- 
+	 | Nano Report 报表模块通过此spring支持类来获得第三方业务系统的统一数据源对象
+	 | @author 时克英
+	 | @date 2013-8-2
+	 | -->
+	<bean id="nanoReportFactoryBean" class="cn.newcapec.foundation.report.util.NanoReportFactoryBean">
+		<property name="dataSource" ref="bizDatasource"/>
+	</bean>
+	
+</beans>

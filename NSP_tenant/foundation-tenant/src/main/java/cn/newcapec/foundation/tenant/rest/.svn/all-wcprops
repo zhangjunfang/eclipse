@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/nsp/!svn/ver/912/06DevelopDesign/NSP/foundation-tenant/src/main/java/cn/newcapec/foundation/tenant/rest
+END
+TenantResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/nsp/!svn/ver/912/06DevelopDesign/NSP/foundation-tenant/src/main/java/cn/newcapec/foundation/tenant/rest/TenantResource.java
+END
+DataSourceResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/nsp/!svn/ver/912/06DevelopDesign/NSP/foundation-tenant/src/main/java/cn/newcapec/foundation/tenant/rest/DataSourceResource.java
+END
+NetTenantResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/nsp/!svn/ver/912/06DevelopDesign/NSP/foundation-tenant/src/main/java/cn/newcapec/foundation/tenant/rest/NetTenantResource.java
+END
+NetResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/nsp/!svn/ver/912/06DevelopDesign/NSP/foundation-tenant/src/main/java/cn/newcapec/foundation/tenant/rest/NetResource.java
+END

@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+#parse("foundation/report/commonjs.html")
+<title>报表管理</title>
+<link href="../../../styles/css/privilege/v1.0/css/style.css" type="text/css" rel="stylesheet"/>
+<link href="../../../styles/css/report/v1.0/css/mycss.css" type="text/css" rel="stylesheet"/>
+<style type="text/css">
+	body{margin:0;padding:0;}
+	.editableTable{
+		padding: 10px;
+		background-color: #DDEEF6;
+		border:1px solid #DDEEF6;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+	}
+	.editableTable thead{
+		background:#FFFFCC;
+	}
+	.selectCell{
+		background:#6699FF;
+	}
+	#save:active{border: 1px solid #2694e8;
+		background: #3baae3 url(/styles/css/report/v1.0/css/themes/cupertino/images/ui-bg_glass_50_3baae3_1x400.png) 50% 50% repeat-x;
+		font-weight: bold;
+		color: #ffffff;
+	}
+	#next:active{border: 1px solid #2694e8;
+		background: #3baae3 url(/styles/css/report/v1.0/css/themes/cupertino/images/ui-bg_glass_50_3baae3_1x400.png) 50% 50% repeat-x;
+		font-weight: bold;
+		color: #ffffff;
+	}
+	#up:active{border: 1px solid #2694e8;
+		background: #3baae3 url(/styles/css/report/v1.0/css/themes/cupertino/images/ui-bg_glass_50_3baae3_1x400.png) 50% 50% repeat-x;
+		font-weight: bold;
+		color: #ffffff;
+	}
+	#report_design:active{border: 1px solid #2694e8;
+		background: #3baae3 url(/styles/css/report/v1.0/css/themes/cupertino/images/ui-bg_glass_50_3baae3_1x400.png) 50% 50% repeat-x;
+		font-weight: bold;
+		color: #ffffff;
+	}
+</style>
+<script type="text/javascript" src="/scripts/foundation/report/v1.0/ui/page_util.js"></script>
+<script type="text/javascript" src="/scripts/foundation/report/v1.0/ui/EdTable.js"></script>
+<script type="text/javascript" src="/scripts/foundation/report/v1.0/ui/reportmanage.js"></script>
+
+</head>
+<body>
+	<div id="toolbar">
+	<!-- 
+		<span style=" font-size:12px;">报表名称:</span><input type="text" id="report_name" name="report_name">
+		<input type="button" class="butbg" onclick="querydata()" value="查询">
+	 -->
+		<input type="button" id="add"  class="butbg" onclick="showAddDialog()" value="增加">
+		<input id="modify" type="button" class="butbg"  value="修改" onclick="showUpdateInfo()">
+		<input id="delete" type="button" class="butbg"  value="删除" onclick="deleteReportInfo()">
+		<input id="publish" type="button" class="butbg"  value="报表发布" onclick="publishReport()">
+		<input id="design" type="button" class="butbg"  value="设计报表" onclick="showDesignDialog()">
+	</div>
+	<div id="grid"></div>
+	<div id="report_dialog" style="display:none">
+		<form id="report_form_addupdate">
+			<input type="hidden" id="id" name="id">
+			<table id="report_add_update">
+				<tr>
+					<td align="right"><font color="red">*</font>报表名称:</td>
+					<td><input type="text" id="name" name="name" style="width:200px;" onblur="checkUnique()"  datacol="yes" err="报表名称" checkexpession="NotNull" ></td>
+				</tr>
+				<tr>
+					<td align="right">数据集:</td>
+					<td><select id="dc_id" name="dc_id" style="width:205px;"></select></td>
+				</tr>
+				<tr>
+					<td align="right">描述:</td>
+					<td><textarea id="summary" name="summary" style="width:200px;"></textarea></td>
+				</tr>
+			</table>
+		</form>
+		<form id="report_form_fields" style="display:none">
+			<input type="hidden" id="reportId" name="reportId">
+			<table class="editableTable" id="fields_table">
+				<thead>
+					<tr>
+						<th><input type="checkbox" onclick="__checkAllFileds(this,'fields_table')"></th>
+						<th>报表列名</th><th>列标题</th><th>排序</th><th>列类型</th><th>列描述</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</form>
+		<form id="customquery_form" style="display:none">
+			<table class="editableTable" id="params_table">
+				<thead>
+					<tr>
+						<th>参数字段</th><th>参数别名</th><th>显示类型</th><th>控件数据</th>
+						<th>验证规则</th><th>参数类型</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</form>
+	</div>
+	<div id="designReport_dialog" style="display:none" title="设计报表">
+		<iframe id='loadreport' name='loadreport' style="width:100%;height:100%" scrolling="no"   frameborder="0" ></iframe>
+	</div>
+	<br>
+	
+<!--  
+<table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%">
+  <tr>
+  	<td>
+      <div class="current-address">当前位置：<a href="#">首页</a>
+      <img src="../../../styles/css/portal/office/images/arrowbg.png"/>
+      <a href="#">$!menuName</a>
+      <img src="../../../styles/css/portal/office/images/arrowbg.png"/></div>
+  	</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">
+	 		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="main_con">
+  			<tr>
+    			<td valign="top" class="border_B0C6E3_left">
+    			
+						<table width="100%" border="0" cellspacing="0" cellpadding="0" class="m_tabel1">
+  						<tr> 
+    						<td>
+	 								<ul class="three_btn">
+										<div class="sub-nav sub-nav-top">
+											<div class="sub-btn-frame">
+												<a class="sub-btn sub-btn-over txt-b" href="#"  id="addRoleUI" onclick="showAddDialog()">
+												<span><img src="../../../styles/css/privilege/v1.0/images/zengjia_ico.png"/>添 加</span>
+												</a>
+											</div>
+											<div class="sub-btn-frame">
+												<a class="sub-btn sub-btn-over" href="#" id="editRole"    class="modify_btn" onclick="showUpdateInfo()">
+												<span><img src="../../../styles/css/privilege/v1.0/images/xiugai_ico.png"/>修 改</span>
+												</a>
+											</div>
+											<div class="sub-btn-frame">
+												<a class="sub-btn sub-btn-over" href="#" id="deleteRole" onclick="deleteReportInfo()">
+												<span><img src="../../../styles/css/privilege/v1.0/images/shanchu_ico.png"/>删 除</span>
+												</a>
+											</div>
+											<div class="sub-btn-frame">
+												<a class="sub-btn sub-btn-over" href="#" id="deleteRole" onclick="showDesignDialog()">
+												<span><img src="../../../styles/css/privilege/v1.0/images/xiugai_ico.png"/>设计报表</span>
+												</a>
+											</div>
+											<div class="sub-btn-frame">
+												<a class="sub-btn sub-btn-over" href="#" id="deleteRole" onclick="publishReport()">
+												<span><img src="../../../styles/css/privilege/v1.0/images/xiugai_ico.png"/>发 布</span>
+												</a>
+											</div>
+											<div class="sub-btn-frame">
+												<label>报表名称：</label>
+												<input name="report_name" id="report_name" type="text" class="text_input"/>
+											</div>
+ 											<div class="sub-btn-frame">
+												<a class="sub-btn sub-btn-over" href="#">
+													<span onclick="javascript:reload()">
+													<img src="../../../styles/css/privilege/v1.0/images/search_ico.png"/>查 询</span>
+												</a>
+											</div>
+										</div>
+									</ul>
+	 							</td>
+  						</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			
+		</td>
+	</tr>
+</table>
+	<div class="fen_geRg" id="pageInfo">
+	#parse("foundation/report/reportmanage_list.html")
+  </div>
+  -->
+</body>
+</html>

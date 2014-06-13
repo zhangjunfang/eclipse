@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/nsp/!svn/ver/855/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/model
+END
+UserRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/model/UserRole.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/model/Role.java
+END
+DepartmentUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/model/DepartmentUser.java
+END
+Department.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/model/Department.java
+END
+Menu.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/model/Menu.java
+END
+DepartmentRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/model/DepartmentRole.java
+END
+Resource.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/model/Resource.java
+END
+Resourcetype.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/model/Resourcetype.java
+END
+RoleResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/nsp/!svn/ver/855/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/model/RoleResource.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/nsp/!svn/ver/796/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege/model/User.java
+END

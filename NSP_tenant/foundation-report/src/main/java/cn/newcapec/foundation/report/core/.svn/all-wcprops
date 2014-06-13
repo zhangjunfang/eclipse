@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core
+END
+ProcedureParseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/ProcedureParseException.java
+END
+DatabaseType.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/DatabaseType.java
+END
+Interpretation.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/Interpretation.java
+END
+ProceduresMetaLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/ProceduresMetaLoader.java
+END
+DataSourceAware.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/DataSourceAware.java
+END
+DataAccessException.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/DataAccessException.java
+END
+DataType.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/DataType.java
+END
+DataTypeAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/DataTypeAdapter.java
+END
+MetaLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/MetaLoader.java
+END
+Field.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/Field.java
+END
+Table.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/Table.java
+END
+ProceduresParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/ProceduresParser.java
+END
+NestedTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/NestedTable.java
+END
+InterpretException.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/InterpretException.java
+END
+DataTypeAdapterAware.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/DataTypeAdapterAware.java
+END
+Parser.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/core/Parser.java
+END

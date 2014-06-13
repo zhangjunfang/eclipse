@@ -1,0 +1,132 @@
+<!-- 
+<%
+ String path = request.getContextPath();
+ String basePath = request.getScheme() + "://"
+   + request.getServerName() + ":" + request.getServerPort()
+   + path + "/";
+%>
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+#parse("foundation/report/commonjs.html")
+<style>
+body{margin:0;padding:0;}
+.editableTable{
+	padding: 10px;
+	background-color: #DDEEF6;
+	border:1px solid #DDEEF6;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+.editableTable thead{
+	background:#FFFFCC;
+}
+.selectCell{
+	background:#6699FF;
+}
+</style>
+<script type="text/javascript" src="/scripts/foundation/report/v1.0/ui/EdTable.js"></script>
+<script type="text/javascript" src="/scripts/foundation/report/v1.0/ui/listdata.js"></script>
+<title>数据集管理</title>
+</head>
+<body>
+	<div id="toolbar">
+		<span style=" font-size:12px;">数据集名称:</span><input type="text" id="listds_name" name="listds_name">
+		<input type="button" class="butbg" onclick="querydata()" value="查询">
+		<input type="button" id="add"  class="butbg" onclick="add()" value="增加">
+		<input id="modify" type="button" class="butbg"  value="修改" onclick="modify()">
+		<input id="delete" type="button" class="butbg"  value="删除" onclick="deleteData()">
+	</div>
+	<div id="grid"></div>
+	
+	<div id="fields_dialog" title="字段管理" style="display:none;">
+		<table class="editableTable" id="fields_table">
+			<thead>
+				<tr><th><input type="checkbox" onclick="__checkAllFileds(this,'fields_table')"><th>字段名</th><th>字段别名</th><th>类型</th></tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+	
+	<div id="listdata_dialog" title="增加" style="display:none;">
+		<form id="listdata_form">
+			<input type="hidden" id="id" name="id">
+			<table>
+				<tr>
+					<td align="right"><font color="red">*</font>数据集名称:</td>
+					<td colspan="3"><input type="text" id="dataname" name="dataname" onblur="checkUnique()" style="width:495px;" datacol="yes" err="数据集名称" checkexpession="NotNull"></td>
+					<td align="left"><div id="msg"></div></td>
+				</tr>
+				<tr>
+					<td align="right">数据集类型:</td>
+					<td>
+						<select id="type" name="type" style="width:222px;">
+							<option value="报表">报表</option>
+							<option value="控件">控件</option>
+						</select>
+					</td>
+					<td align="right">数据源:</td>
+					<td>
+						<select id="ds_id" name="ds_id" style="width:223px;" onchange="appendProcedureSelectOptions(this.value,'')">
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">数据类型:</td>
+					<td colspan="3">
+						<input id="datatype" name="datatype" type="radio" value="sql" checked="checked" onclick="showAndHideTr(this.value)">SQL
+						<input id="datatype" name="datatype" type="radio" value="procedure" onclick="showAndHideTr(this.value)">存储过程
+					</td>
+				</tr>
+				<tr id="sql_tr">
+					<td align="right">sql语句:</td>
+					<td colspan="3">
+						<textarea style="width:495px;height:150px;" id="sql_content" name="sql_content"></textarea>
+					</td>
+				</tr>
+				<tr style="display:none" id="method_tr">
+					<td align="right">存储列表:</td>
+					<td colspan="3">
+						<select id="method" name="method" style="width:500px;" onchange="getProcedureData(this.value)" >
+							<option value="0">请选择存储过程</option>
+						</select>
+					</td>
+				</tr>
+				<tr style="display:none" id="fields_tr">
+					<td align="right">字段列表:</td>
+					<td colspan="3">
+						<select id="fields" name="fields" size="5" multiple="multiple" style="width:500px;"></select>
+					</td>
+					<td>
+						 <input type="button" value="字段管理"  onclick="fieldmanage()">
+					</td>
+				</tr>
+				<tr style="display:none" id="params_tr">
+					<td align="right">参数列表:</td>
+					<td colspan="3">
+						<select style="width:500px;" size="5" multiple="multiple" id="params" name="params"></select>
+					</td>
+					<td>
+						 <input type="button" value="参数管理"  onclick="fieldmanage()">
+					</td>
+				</tr>
+				<tr>
+					<td align="right">过滤字段:</td>
+					<td colspan="3">
+						<input id="filter_field" name="filter_field" style="width:495px;" type="text">
+					</td>
+				</tr>
+				<tr>
+					<td align="right">描述:</td>
+					<td colspan="3">
+						<textarea style="width:495px;height:80px;" id="summary" name="summary"></textarea>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

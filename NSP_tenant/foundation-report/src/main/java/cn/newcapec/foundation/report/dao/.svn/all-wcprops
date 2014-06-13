@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/nsp/!svn/ver/820/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/dao
+END
+ReportManageDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/nsp/!svn/ver/820/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/dao/ReportManageDao.java
+END
+AbstractJdbcDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/dao/AbstractJdbcDao.java
+END
+DatasourceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/dao/DatasourceDao.java
+END

@@ -1,0 +1,58 @@
+10
+
+dir
+921
+http://192.168.0.196/svn/nsp/06DevelopDesign/NSP/foundation-privilege/src/main/java/cn/newcapec/foundation/privilege
+http://192.168.0.196/svn/nsp
+
+
+
+2013-10-24T08:26:14.534540Z
+913
+lixuandong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1bf08479-d0d5-4a2f-b156-dc3787df03f3
+
+model
+dir
+
+utils
+dir
+
+dao
+dir
+
+biz
+dir
+
+servlet
+dir
+
+filter
+dir
+
+constant
+dir
+
+job
+dir
+
+rest
+dir
+
+exception
+dir
+

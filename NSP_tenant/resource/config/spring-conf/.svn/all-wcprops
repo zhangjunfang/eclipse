@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/nsp/!svn/ver/895/06DevelopDesign/NSP/resource/config/spring-conf
+END
+applicationContext-action.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/resource/config/spring-conf/applicationContext-action.xml
+END
+dataSource-sqlService.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/nsp/!svn/ver/884/06DevelopDesign/NSP/resource/config/spring-conf/dataSource-sqlService.xml
+END
+dataSource-postgresql.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/nsp/!svn/ver/884/06DevelopDesign/NSP/resource/config/spring-conf/dataSource-postgresql.xml
+END
+applicationContext-redis
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/nsp/!svn/ver/2/06DevelopDesign/NSP/resource/config/spring-conf/applicationContext-redis
+END
+dataSource-mysql.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/nsp/!svn/ver/895/06DevelopDesign/NSP/resource/config/spring-conf/dataSource-mysql.xml
+END
+dataSource-oracle.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/nsp/!svn/ver/895/06DevelopDesign/NSP/resource/config/spring-conf/dataSource-oracle.xml
+END
+dataAccessContext-hibernate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/nsp/!svn/ver/895/06DevelopDesign/NSP/resource/config/spring-conf/dataAccessContext-hibernate.xml
+END

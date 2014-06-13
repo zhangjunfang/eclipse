@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/util
+END
+DataBaseConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/util/DataBaseConnection.java
+END
+DataBaseUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/util/DataBaseUtils.java
+END
+NanoReportFactoryBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/util/NanoReportFactoryBean.java
+END
+SegmentReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/util/SegmentReader.java
+END
+DatabaseType.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/util/DatabaseType.java
+END
+StringTools.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/util/StringTools.java
+END
+StringUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/util/StringUtils.java
+END
+NanoReportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/util/NanoReportService.java
+END
+OracleDataBaseConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/nsp/!svn/ver/799/06DevelopDesign/NSP/foundation-report/src/main/java/cn/newcapec/foundation/report/util/OracleDataBaseConnection.java
+END

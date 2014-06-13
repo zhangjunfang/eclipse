@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>数据源管理</title>
+#parse("foundation/report/commonjs.html")
+<script type="text/javascript" src="/scripts/foundation/report/v1.0/ui/datasource.js"></script>
+<style>
+body{margin:0;padding:0;}
+</style>
+</head>
+<body>
+	<div id="toolbar">
+		<span style=" font-size:12px;">数据源名称:</span><input type="text" id="ds_name" name="ds_name">
+		<input type="button" onClick="query()"  class="butbg" value="查询">
+		<input type="button" id="add"  onclick="addData()"  class="butbg" value="增加" >
+		<input id="modify" type="button" value="修改"  class="butbg" onClick="modify()" >
+		<input id="delete" type="button" value="删除"   class="butbg" onClick="deleteData()">
+	</div>
+	
+	<div id="grid"></div>
+	
+	<div id="datasource_dialog" title="增加" style="display:none;">
+		<form id="datasource_form">
+			<input type="hidden" id="id" name="id">
+			<table>
+				<tr>
+					<td align="right"><font color="red">*</font>数据源名称:</td>
+					<td><input type="text" id="name" name="name"  title="请输入数据源名称" onblur="checkUnique()" datacol="yes" err="数据源名称" checkexpession="NotNull"></td>
+				</tr>
+				<tr>
+					<td align="right">数据库类型:</td>
+					<td>
+						<select id="type" name="type" style="width:160px;">
+							<option value="oracle">oracle</option>
+							<option value="sqlserver">sqlserver</option>
+							<option value="mysql">mysql</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td align="right"><font color="red">*</font>服务地址:</td>
+					<td><input id="dsAddress"  name="dsAddress" type="text" width="160px;" title="请输入ip地址" datacol="yes" err="服务地址" checkexpession="NotNull"></td>
+				</tr>
+				<tr>
+					<td align="right"><font color="red">*</font>数据库名:</td>
+					<td><input id="dsServer" name="dsServer" type="text" width="160px;" datacol="yes" err="数据库名" checkexpession="NotNull"></td>
+				</tr>
+				<tr>
+					<td align="right"><font color="red">*</font>用户名:</td>
+					<td><input id="dsUser" name="dsUser" type="text" width="160px;" datacol="yes" err="用户名" checkexpession="NotNull"></td>
+				</tr>
+				<tr>
+					<td align="right"><font color="red">*</font>密码:</td>
+					<td><input id=dsPass name="dsPass" type="password" width="160px;" datacol="yes" err="密码" checkexpession="NotNull"></td>
+				</tr>
+				<tr>
+					<td align="right">描述:</td>
+					<td><textarea id="summary" name="summary" style="width:155px;"></textarea></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+	<localRepository>c:/.m2/repository</localRepository>
+	<interactiveMode>true</interactiveMode>
+	<usePluginRegistry>false</usePluginRegistry>
+	<offline>false</offline>
+		<pluginGroups>
+			
+		</pluginGroups>
+		  <proxies>
+    <!-- proxy
+     | Specification for one proxy, to be used in connecting to the network.
+     |
+    <proxy>
+      <id>optional</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <username>proxyuser</username>
+      <password>proxypass</password>
+      <host>proxy.host.net</host>
+      <port>80</port>
+      <nonProxyHosts>local.net|some.host.com</nonProxyHosts>
+    </proxy>
+  
+    <proxy>
+      <id>optional</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>www.yourproxy.com</host>
+      <port>8080</port>
+    </proxy>
+      -->
+  </proxies>
+	<servers>
+	</servers>
+	 <!-- <mirrors>
+		<mirrors>
+			<mirror>
+				<id>nexus</id>
+				<mirrorOf>*</mirrorOf>
+				<url>http://192.168.0.65/nexus/content/groups/newcapec</url>
+			</mirror>
+</mirrors>
+	</mirrors> -->
+	<profiles>
+		<profile>
+			<id>jdk1.7.0_25</id>
+			<activation>
+				<jdk>jdk1.7.0_25</jdk>
+			</activation>
+			<repositories>
+				
+				<repository>
+					<id>central</id>
+					<url>http://central</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+				
+				
+				<!-- spring maven 库 方便spring的应用开发 -->
+				<repository>
+					<id>spring-maven-release</id>
+					<name>Spring Maven Release Repository</name>
+					<url>http://maven.springframework.org/release</url>
+				</repository>
+				<repository>
+					<id>spring-maven-milestone</id>
+					<name>Spring Maven Milestone Repository</name>
+					<url>http://maven.springframework.org/milestone</url>
+				</repository>
+				<!-- JBOSS maven 库 -->
+				<repository>
+					<id>hx</id>
+					<url>http://192.168.101.152:8082/nexus/content/groups/public/</url>
+					<name>hx</name>
+				</repository>
+				<!-- JBOSS maven 库 -->
+				<repository>
+					<id>JBoss Repo</id>
+					<url>https://repository.jboss.org/nexus/content/repositories/releases
+					</url>
+					<name>JBoss Repo</name>
+				</repository>
+				
+				<repository>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+					<id>jboss repo</id>
+					<url>https://repository.jboss.org/nexus/content/groups/public/
+					</url>
+				</repository>
+				<repository>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+					<id>JBoss Repo shapshots</id>
+					<url>
+						https://repository.jboss.org/nexus/content/repositories/snapshots
+					</url>
+					<name>JBoss Repo</name>
+				</repository>
+			  <repository>  
+			   <id>maven-restlet</id>  
+			   <name>Public online Restlet repository</name>  
+			   <url>http://maven.restlet.org</url>  
+        </repository> 
+				<repository>
+					<id>snapshots.jboss.org</id>
+					<name>JBoss Snapshot Repository</name>
+					<url>http://snapshots.jboss.org/maven2</url>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+				<repository>
+					<!-- 据说是最好的连接池BoenCP,当然这里只是他的库而已 -->
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+					<id>Jolbox BoneCP</id>
+					<url>http://jolbox.com/bonecp/downloads/maven</url>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>central</id>
+						<url>http://central</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+</settings>
