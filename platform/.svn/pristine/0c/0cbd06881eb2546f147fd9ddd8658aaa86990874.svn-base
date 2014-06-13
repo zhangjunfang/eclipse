@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.newcapec</groupId>
+        <artifactId>cn.newcapec.config</artifactId>
+        <version>1.0.0-RELEASE</version>
+    </parent>
+
+    <groupId>cn.newcapec.framework.plugins</groupId>
+    <artifactId>cn.newcapec.framework.plugins.cache</artifactId>
+	<packaging>jar</packaging>
+	<name>newcapec :: plugins :: cache</name>
+
+  <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>privilege</name>
+            <url>http://192.168.0.65/nexus/content/repositories/releases/</url>
+        </repository>
+
+
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>privilege</name>
+            <url>http://192.168.0.65/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+    
+            <!-- 设定除中央仓库(repo1.maven.org/maven2/)外的其他仓库,按设定顺序进行查找.如有Nexus私服, 取消注释并指向正确的服务器地址 -->
+	    <repositories>
+		    <repository>
+		    <id>maven-newcapec</id>
+		    <name>maven-newcapec</name>
+		      <url>http://192.168.0.65/nexus/content/groups/newcapec/</url>
+		    </repository>
+	    </repositories>
+    
+     <dependencies>
+        <dependency>
+             <groupId>cn.newcapec.framework</groupId>
+            <artifactId>cn.newcapec.framework.core</artifactId>
+        </dependency>
+
+        <!-- loging -->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+        </dependency>
+
+
+        <!-- apache common  -->
+        <dependency>
+            <groupId>net.sf.staccatocommons</groupId>
+            <artifactId>commons-lang</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-pool</groupId>
+            <artifactId>commons-pool</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+        </dependency>
+
+        <!-- servlet-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+        </dependency>
+
+        <!--json begin -->
+        <!-- json 5.1-->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+        </dependency>
+        <!-- json 5.2-->
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <classifier>jdk15</classifier>
+        </dependency>
+         <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+    </dependencies>
+
+
+	<build>
+		<defaultGoal>compile</defaultGoal>
+	</build>
+
+</project>

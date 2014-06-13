@@ -1,0 +1,579 @@
+[INFO ] [2014-01-06 09:09:55] initServletBean (FrameworkServlet.java:454) 
+ FrameworkServlet 'testController': initialization started
+[INFO ] [2014-01-06 09:09:55] prepareRefresh (AbstractApplicationContext.java:510) 
+ Refreshing WebApplicationContext for namespace 'testController-servlet': startup date [Mon Jan 06 09:09:55 CST 2014]; parent: Root WebApplicationContext
+[INFO ] [2014-01-06 09:09:55] loadBeanDefinitions (XmlBeanDefinitionReader.java:315) 
+ Loading XML bean definitions from class path resource [config/spring-conf/application-mvc-quartz.xml]
+[INFO ] [2014-01-06 09:09:55] preInstantiateSingletons (DefaultListableBeanFactory.java:598) 
+ Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@17fff1f: defining beans [jobController,jobResource,schedulerResource,triggerResource,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,quartzUrlMapping,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,cn.newcapec.framework.core.handler.SystemExceptionHandler#0,org.springframework.web.servlet.handler.MappedInterceptor#0,stringHttpMessageConverter,mappingJacksonHttpMessageConverter,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,multiViewHandlerInterceptor,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,velocityViewResolver,velocityConfig,jspViewResolver,quartzScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1847a42
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/add],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.add()
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/delete],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.delete()
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/view],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.view(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/jobListUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.jobListUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/jobListGrid],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.jobListGrid(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/editJobUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.editJobUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/addJobUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.addJobUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/removeJobTrigger],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.removeJobTrigger()
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/removeJobListener],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.removeJobListener()
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeOnce],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.executeOnce()
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeSimpleUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.executeSimpleUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeSimple],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.executeSimple()
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeCronUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.executeCronUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/createCronUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.createCronUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeCron],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.executeCron()
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/testCronExpression],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.testCronExpression()
+[INFO ] [2014-01-06 09:09:55] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/cronHelp],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.cronHelp(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:09:55] registerHandler (AbstractUrlHandlerMapping.java:315) 
+ Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO ] [2014-01-06 09:09:55] registerHandler (AbstractUrlHandlerMapping.java:315) 
+ Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO ] [2014-01-06 09:09:55] createVelocityEngine (VelocityEngineFactory.java:222) 
+ Loading Velocity config from [class path resource [config/velocity/velocity.properties]]
+[INFO ] [2014-01-06 09:09:55] postProcessVelocityEngine (VelocityConfigurer.java:139) 
+ ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+[INFO ] [2014-01-06 09:09:56] initSchedulerFactory (SchedulerFactoryBean.java:552) 
+ Loading Quartz config from [class path resource [quartz.properties]]
+[INFO ] [2014-01-06 09:09:56] instantiate (StdSchedulerFactory.java:1184) 
+ Using default implementation for ThreadExecutor
+[INFO ] [2014-01-06 09:09:56] initialize (SimpleThreadPool.java:268) 
+ Job execution threads will use class loader of thread: main
+[INFO ] [2014-01-06 09:09:56] <init> (SchedulerSignalerImpl.java:61) 
+ Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] [2014-01-06 09:09:56] <init> (QuartzScheduler.java:240) 
+ Quartz Scheduler v.2.2.1 created.
+[INFO ] [2014-01-06 09:09:56] getPoolManager (AbstractPoolBackedDataSource.java:462) 
+ Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge1638zs1uikq1m23hxs|151c9a0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge1638zs1uikq1m23hxs|151c9a0, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/newcapec?characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO ] [2014-01-06 09:09:56] initialize (JobStoreSupport.java:667) 
+ Using db table-based data access locking (synchronization).
+[INFO ] [2014-01-06 09:09:56] initialize (JobStoreCMT.java:145) 
+ JobStoreCMT initialized.
+[INFO ] [2014-01-06 09:09:56] initialize (QuartzScheduler.java:305) 
+ Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+[INFO ] [2014-01-06 09:09:56] instantiate (StdSchedulerFactory.java:1339) 
+ Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[INFO ] [2014-01-06 09:09:56] instantiate (StdSchedulerFactory.java:1343) 
+ Quartz scheduler version: 2.2.1
+[INFO ] [2014-01-06 09:09:56] setJobFactory (QuartzScheduler.java:2311) 
+ JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@65dbe8
+[INFO ] [2014-01-06 09:09:56] start (DefaultLifecycleProcessor.java:334) 
+ Starting beans in phase 2147483647
+[INFO ] [2014-01-06 09:09:56] startScheduler (SchedulerFactoryBean.java:648) 
+ Starting Quartz Scheduler now
+[INFO ] [2014-01-06 09:09:58] destroySingletons (DefaultSingletonBeanRegistry.java:444) 
+ Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@17fff1f: defining beans [jobController,jobResource,schedulerResource,triggerResource,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,quartzUrlMapping,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,cn.newcapec.framework.core.handler.SystemExceptionHandler#0,org.springframework.web.servlet.handler.MappedInterceptor#0,stringHttpMessageConverter,mappingJacksonHttpMessageConverter,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,multiViewHandlerInterceptor,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,velocityViewResolver,velocityConfig,jspViewResolver,quartzScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1847a42
+[INFO ] [2014-01-06 09:09:58] destroy (SchedulerFactoryBean.java:758) 
+ Shutting down Quartz Scheduler
+[INFO ] [2014-01-06 09:09:58] shutdown (QuartzScheduler.java:694) 
+ Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[INFO ] [2014-01-06 09:09:58] standby (QuartzScheduler.java:613) 
+ Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[INFO ] [2014-01-06 09:09:58] shutdown (QuartzScheduler.java:771) 
+ Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[ERROR] [2014-01-06 09:09:58] initServletBean (FrameworkServlet.java:467) 
+ Context initialization failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'quartzScheduler'; nested exception is org.springframework.scheduling.SchedulingException: Could not start Quartz Scheduler; nested exception is org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.impl.jdbcjobstore.LockException: Failure obtaining db row lock: Table 'newcapec.qrtz_locks' doesn't exist [See nested exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'newcapec.qrtz_locks' doesn't exist]]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:170)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:51)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:339)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:143)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:108)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:945)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:651)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:599)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:665)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:518)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:459)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
+	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:440)
+	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:263)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:736)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:140)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart(Jetty6PluginWebAppContext.java:115)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:156)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:454)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:396)
+	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:210)
+	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:184)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:107)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:195)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:140)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:84)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:59)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.singleThreadedBuild(LifecycleStarter.java:183)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:161)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:314)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:151)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:445)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:168)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:290)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
+Caused by: org.springframework.scheduling.SchedulingException: Could not start Quartz Scheduler; nested exception is org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.impl.jdbcjobstore.LockException: Failure obtaining db row lock: Table 'newcapec.qrtz_locks' doesn't exist [See nested exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'newcapec.qrtz_locks' doesn't exist]]
+	at org.springframework.scheduling.quartz.SchedulerFactoryBean.start(SchedulerFactoryBean.java:715)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:167)
+	... 57 more
+Caused by: org.quartz.SchedulerConfigException: Failure occured during job recovery. [See nested exception: org.quartz.impl.jdbcjobstore.LockException: Failure obtaining db row lock: Table 'newcapec.qrtz_locks' doesn't exist [See nested exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'newcapec.qrtz_locks' doesn't exist]]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.schedulerStarted(JobStoreSupport.java:692)
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:567)
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:142)
+	at org.springframework.scheduling.quartz.SchedulerFactoryBean.startScheduler(SchedulerFactoryBean.java:649)
+	at org.springframework.scheduling.quartz.SchedulerFactoryBean.start(SchedulerFactoryBean.java:712)
+	... 58 more
+Caused by: org.quartz.impl.jdbcjobstore.LockException: Failure obtaining db row lock: Table 'newcapec.qrtz_locks' doesn't exist [See nested exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'newcapec.qrtz_locks' doesn't exist]
+	at org.quartz.impl.jdbcjobstore.StdRowLockSemaphore.executeSQL(StdRowLockSemaphore.java:157)
+	at org.quartz.impl.jdbcjobstore.DBSemaphore.obtainLock(DBSemaphore.java:113)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3780)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.recoverJobs(JobStoreSupport.java:834)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.schedulerStarted(JobStoreSupport.java:690)
+	... 62 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'newcapec.qrtz_locks' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2542)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1734)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1885)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:76)
+	at org.quartz.impl.jdbcjobstore.StdRowLockSemaphore.executeSQL(StdRowLockSemaphore.java:96)
+	... 66 more
+[INFO ] [2014-01-06 09:10:42] initServletBean (FrameworkServlet.java:454) 
+ FrameworkServlet 'testController': initialization started
+[INFO ] [2014-01-06 09:10:42] prepareRefresh (AbstractApplicationContext.java:510) 
+ Refreshing WebApplicationContext for namespace 'testController-servlet': startup date [Mon Jan 06 09:10:42 CST 2014]; parent: Root WebApplicationContext
+[INFO ] [2014-01-06 09:10:42] loadBeanDefinitions (XmlBeanDefinitionReader.java:315) 
+ Loading XML bean definitions from class path resource [config/spring-conf/application-mvc-quartz.xml]
+[INFO ] [2014-01-06 09:10:43] preInstantiateSingletons (DefaultListableBeanFactory.java:598) 
+ Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@83bbb6: defining beans [jobController,jobResource,schedulerResource,triggerResource,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,quartzUrlMapping,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,cn.newcapec.framework.core.handler.SystemExceptionHandler#0,org.springframework.web.servlet.handler.MappedInterceptor#0,stringHttpMessageConverter,mappingJacksonHttpMessageConverter,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,multiViewHandlerInterceptor,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,velocityViewResolver,velocityConfig,jspViewResolver,quartzScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@106d4ea
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/add],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.add()
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/delete],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.delete()
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/view],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.view(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/jobListUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.jobListUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/jobListGrid],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.jobListGrid(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/editJobUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.editJobUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/addJobUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.addJobUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/removeJobTrigger],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.removeJobTrigger()
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/removeJobListener],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.removeJobListener()
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeOnce],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.executeOnce()
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeSimpleUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.executeSimpleUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeSimple],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.executeSimple()
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeCronUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.executeCronUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/createCronUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.createCronUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeCron],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.executeCron()
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/testCronExpression],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.testCronExpression()
+[INFO ] [2014-01-06 09:10:43] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/cronHelp],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.cronHelp(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 09:10:43] registerHandler (AbstractUrlHandlerMapping.java:315) 
+ Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO ] [2014-01-06 09:10:43] registerHandler (AbstractUrlHandlerMapping.java:315) 
+ Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO ] [2014-01-06 09:10:43] createVelocityEngine (VelocityEngineFactory.java:222) 
+ Loading Velocity config from [class path resource [config/velocity/velocity.properties]]
+[INFO ] [2014-01-06 09:10:43] postProcessVelocityEngine (VelocityConfigurer.java:139) 
+ ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+[INFO ] [2014-01-06 09:10:43] initSchedulerFactory (SchedulerFactoryBean.java:552) 
+ Loading Quartz config from [class path resource [quartz.properties]]
+[INFO ] [2014-01-06 09:10:43] instantiate (StdSchedulerFactory.java:1184) 
+ Using default implementation for ThreadExecutor
+[INFO ] [2014-01-06 09:10:43] initialize (SimpleThreadPool.java:268) 
+ Job execution threads will use class loader of thread: main
+[INFO ] [2014-01-06 09:10:43] <init> (SchedulerSignalerImpl.java:61) 
+ Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] [2014-01-06 09:10:43] <init> (QuartzScheduler.java:240) 
+ Quartz Scheduler v.2.2.1 created.
+[INFO ] [2014-01-06 09:10:43] initialize (JobStoreSupport.java:667) 
+ Using db table-based data access locking (synchronization).
+[INFO ] [2014-01-06 09:10:43] initialize (JobStoreCMT.java:145) 
+ JobStoreCMT initialized.
+[INFO ] [2014-01-06 09:10:43] initialize (QuartzScheduler.java:305) 
+ Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+[INFO ] [2014-01-06 09:10:43] instantiate (StdSchedulerFactory.java:1339) 
+ Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[INFO ] [2014-01-06 09:10:43] instantiate (StdSchedulerFactory.java:1343) 
+ Quartz scheduler version: 2.2.1
+[INFO ] [2014-01-06 09:10:43] setJobFactory (QuartzScheduler.java:2311) 
+ JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@a8e5ac
+[INFO ] [2014-01-06 09:10:43] start (DefaultLifecycleProcessor.java:334) 
+ Starting beans in phase 2147483647
+[INFO ] [2014-01-06 09:10:43] startScheduler (SchedulerFactoryBean.java:648) 
+ Starting Quartz Scheduler now
+[INFO ] [2014-01-06 09:10:43] recoverJobs (JobStoreSupport.java:861) 
+ Freed 0 triggers from 'acquired' / 'blocked' state.
+[INFO ] [2014-01-06 09:10:43] recoverJobs (JobStoreSupport.java:871) 
+ Recovering 0 jobs that were in-progress at the time of the last shut-down.
+[INFO ] [2014-01-06 09:10:43] recoverJobs (JobStoreSupport.java:884) 
+ Recovery complete.
+[INFO ] [2014-01-06 09:10:43] recoverJobs (JobStoreSupport.java:891) 
+ Removed 0 'complete' triggers.
+[INFO ] [2014-01-06 09:10:43] recoverJobs (JobStoreSupport.java:896) 
+ Removed 0 stale fired job entries.
+[INFO ] [2014-01-06 09:10:43] start (QuartzScheduler.java:575) 
+ Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[INFO ] [2014-01-06 09:10:43] initServletBean (FrameworkServlet.java:473) 
+ FrameworkServlet 'testController': initialization completed in 797 ms
+[INFO ] [2014-01-06 09:10:48] postHandle (NspApplicationContextInterceptor.java:42) 
+ viewName : framework/plugins/quartz/job/job_list
+[ERROR] [2014-01-06 09:10:48] logVelocityMessage (CommonsLoggingLogSystem.java:49) 
+ ResourceManager : unable to find resource 'framework/plugins/quartz/job/job_list.html.html' in any resource loader.
+[INFO ] [2014-01-06 10:19:17] initServletBean (FrameworkServlet.java:454) 
+ FrameworkServlet 'testController': initialization started
+[INFO ] [2014-01-06 10:19:17] prepareRefresh (AbstractApplicationContext.java:510) 
+ Refreshing WebApplicationContext for namespace 'testController-servlet': startup date [Mon Jan 06 10:19:17 CST 2014]; parent: Root WebApplicationContext
+[INFO ] [2014-01-06 10:19:17] loadBeanDefinitions (XmlBeanDefinitionReader.java:315) 
+ Loading XML bean definitions from class path resource [config/spring-conf/application-mvc-quartz.xml]
+[INFO ] [2014-01-06 10:19:17] preInstantiateSingletons (DefaultListableBeanFactory.java:598) 
+ Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@19495b8: defining beans [jobController,jobResource,schedulerResource,triggerResource,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,quartzUrlMapping,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,cn.newcapec.framework.core.handler.SystemExceptionHandler#0,org.springframework.web.servlet.handler.MappedInterceptor#0,stringHttpMessageConverter,mappingJacksonHttpMessageConverter,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,multiViewHandlerInterceptor,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,quartzvelocityViewResolver,quartzvelocityConfig,quartzjspViewResolver,quartzScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@769d7a
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/add],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.add()
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/delete],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.delete()
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/view],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.view(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/jobListUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.jobListUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/jobListGrid],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.jobListGrid(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/editJobUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.editJobUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/addJobUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.addJobUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/removeJobTrigger],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.removeJobTrigger()
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/removeJobListener],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.removeJobListener()
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeOnce],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.executeOnce()
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeSimpleUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.executeSimpleUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeSimple],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.executeSimple()
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeCronUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.executeCronUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/createCronUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.createCronUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeCron],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.executeCron()
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/testCronExpression],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.testCronExpression()
+[INFO ] [2014-01-06 10:19:17] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/cronHelp],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.cronHelp(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:19:17] registerHandler (AbstractUrlHandlerMapping.java:315) 
+ Mapped URL path [/scripts/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO ] [2014-01-06 10:19:17] registerHandler (AbstractUrlHandlerMapping.java:315) 
+ Mapped URL path [/styles/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO ] [2014-01-06 10:19:17] createVelocityEngine (VelocityEngineFactory.java:222) 
+ Loading Velocity config from [class path resource [config/velocity/velocity.properties]]
+[INFO ] [2014-01-06 10:19:17] postProcessVelocityEngine (VelocityConfigurer.java:139) 
+ ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+[INFO ] [2014-01-06 10:19:17] initSchedulerFactory (SchedulerFactoryBean.java:552) 
+ Loading Quartz config from [class path resource [quartz.properties]]
+[INFO ] [2014-01-06 10:19:17] instantiate (StdSchedulerFactory.java:1184) 
+ Using default implementation for ThreadExecutor
+[INFO ] [2014-01-06 10:19:17] initialize (SimpleThreadPool.java:268) 
+ Job execution threads will use class loader of thread: main
+[INFO ] [2014-01-06 10:19:17] <init> (SchedulerSignalerImpl.java:61) 
+ Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] [2014-01-06 10:19:17] <init> (QuartzScheduler.java:240) 
+ Quartz Scheduler v.2.2.1 created.
+[INFO ] [2014-01-06 10:19:17] initialize (JobStoreSupport.java:667) 
+ Using db table-based data access locking (synchronization).
+[INFO ] [2014-01-06 10:19:17] initialize (JobStoreCMT.java:145) 
+ JobStoreCMT initialized.
+[INFO ] [2014-01-06 10:19:17] initialize (QuartzScheduler.java:305) 
+ Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+[INFO ] [2014-01-06 10:19:17] instantiate (StdSchedulerFactory.java:1339) 
+ Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[INFO ] [2014-01-06 10:19:17] instantiate (StdSchedulerFactory.java:1343) 
+ Quartz scheduler version: 2.2.1
+[INFO ] [2014-01-06 10:19:17] setJobFactory (QuartzScheduler.java:2311) 
+ JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@a6a4b6
+[INFO ] [2014-01-06 10:19:17] start (DefaultLifecycleProcessor.java:334) 
+ Starting beans in phase 2147483647
+[INFO ] [2014-01-06 10:19:17] startScheduler (SchedulerFactoryBean.java:648) 
+ Starting Quartz Scheduler now
+[INFO ] [2014-01-06 10:19:17] recoverJobs (JobStoreSupport.java:861) 
+ Freed 0 triggers from 'acquired' / 'blocked' state.
+[INFO ] [2014-01-06 10:19:17] recoverJobs (JobStoreSupport.java:871) 
+ Recovering 0 jobs that were in-progress at the time of the last shut-down.
+[INFO ] [2014-01-06 10:19:17] recoverJobs (JobStoreSupport.java:884) 
+ Recovery complete.
+[INFO ] [2014-01-06 10:19:17] recoverJobs (JobStoreSupport.java:891) 
+ Removed 0 'complete' triggers.
+[INFO ] [2014-01-06 10:19:17] recoverJobs (JobStoreSupport.java:896) 
+ Removed 0 stale fired job entries.
+[INFO ] [2014-01-06 10:19:17] start (QuartzScheduler.java:575) 
+ Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[INFO ] [2014-01-06 10:19:17] initServletBean (FrameworkServlet.java:473) 
+ FrameworkServlet 'testController': initialization completed in 547 ms
+[INFO ] [2014-01-06 10:19:22] postHandle (NspApplicationContextInterceptor.java:42) 
+ viewName : framework/plugins/quartz/job/job_list
+[INFO ] [2014-01-06 10:29:06] initServletBean (FrameworkServlet.java:454) 
+ FrameworkServlet 'testController': initialization started
+[INFO ] [2014-01-06 10:29:06] prepareRefresh (AbstractApplicationContext.java:510) 
+ Refreshing WebApplicationContext for namespace 'testController-servlet': startup date [Mon Jan 06 10:29:06 CST 2014]; parent: Root WebApplicationContext
+[INFO ] [2014-01-06 10:29:06] loadBeanDefinitions (XmlBeanDefinitionReader.java:315) 
+ Loading XML bean definitions from class path resource [config/spring-conf/application-mvc-quartz.xml]
+[INFO ] [2014-01-06 10:29:06] preInstantiateSingletons (DefaultListableBeanFactory.java:598) 
+ Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@46638f: defining beans [jobController,jobResource,schedulerResource,triggerResource,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,quartzUrlMapping,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,quartzScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@15cd49f
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/add],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.add()
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/delete],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.delete()
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/view],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.view(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/jobListUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.jobListUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/jobListGrid],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.jobListGrid(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/editJobUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.editJobUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/addJobUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.addJobUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/removeJobTrigger],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.removeJobTrigger()
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/removeJobListener],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.removeJobListener()
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeOnce],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.executeOnce()
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeSimpleUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.executeSimpleUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeSimple],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.executeSimple()
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeCronUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.executeCronUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/createCronUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.createCronUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeCron],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.executeCron()
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/testCronExpression],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.testCronExpression()
+[INFO ] [2014-01-06 10:29:06] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/cronHelp],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.cronHelp(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 10:29:06] initSchedulerFactory (SchedulerFactoryBean.java:552) 
+ Loading Quartz config from [class path resource [quartz.properties]]
+[INFO ] [2014-01-06 10:29:06] instantiate (StdSchedulerFactory.java:1184) 
+ Using default implementation for ThreadExecutor
+[INFO ] [2014-01-06 10:29:06] initialize (SimpleThreadPool.java:268) 
+ Job execution threads will use class loader of thread: main
+[INFO ] [2014-01-06 10:29:07] <init> (SchedulerSignalerImpl.java:61) 
+ Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] [2014-01-06 10:29:07] <init> (QuartzScheduler.java:240) 
+ Quartz Scheduler v.2.2.1 created.
+[INFO ] [2014-01-06 10:29:07] initialize (JobStoreSupport.java:667) 
+ Using db table-based data access locking (synchronization).
+[INFO ] [2014-01-06 10:29:07] initialize (JobStoreCMT.java:145) 
+ JobStoreCMT initialized.
+[INFO ] [2014-01-06 10:29:07] initialize (QuartzScheduler.java:305) 
+ Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+[INFO ] [2014-01-06 10:29:07] instantiate (StdSchedulerFactory.java:1339) 
+ Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[INFO ] [2014-01-06 10:29:07] instantiate (StdSchedulerFactory.java:1343) 
+ Quartz scheduler version: 2.2.1
+[INFO ] [2014-01-06 10:29:07] setJobFactory (QuartzScheduler.java:2311) 
+ JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@11a9732
+[INFO ] [2014-01-06 10:29:07] start (DefaultLifecycleProcessor.java:334) 
+ Starting beans in phase 2147483647
+[INFO ] [2014-01-06 10:29:07] startScheduler (SchedulerFactoryBean.java:648) 
+ Starting Quartz Scheduler now
+[INFO ] [2014-01-06 10:29:07] recoverJobs (JobStoreSupport.java:861) 
+ Freed 0 triggers from 'acquired' / 'blocked' state.
+[INFO ] [2014-01-06 10:29:07] recoverJobs (JobStoreSupport.java:871) 
+ Recovering 0 jobs that were in-progress at the time of the last shut-down.
+[INFO ] [2014-01-06 10:29:07] recoverJobs (JobStoreSupport.java:884) 
+ Recovery complete.
+[INFO ] [2014-01-06 10:29:07] recoverJobs (JobStoreSupport.java:891) 
+ Removed 0 'complete' triggers.
+[INFO ] [2014-01-06 10:29:07] recoverJobs (JobStoreSupport.java:896) 
+ Removed 0 stale fired job entries.
+[INFO ] [2014-01-06 10:29:07] start (QuartzScheduler.java:575) 
+ Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[INFO ] [2014-01-06 10:29:07] initServletBean (FrameworkServlet.java:473) 
+ FrameworkServlet 'testController': initialization completed in 454 ms
+[INFO ] [2014-01-06 10:29:27] postHandle (NspApplicationContextInterceptor.java:42) 
+ viewName : framework/plugins/quartz/job/job_list
+[ERROR] [2014-01-06 10:29:27] logVelocityMessage (CommonsLoggingLogSystem.java:49) 
+ ResourceManager : unable to find resource 'framework/plugins/quartz/job/job_list.html.html' in any resource loader.
+[INFO ] [2014-01-06 11:18:33] initServletBean (FrameworkServlet.java:454) 
+ FrameworkServlet 'testController': initialization started
+[INFO ] [2014-01-06 11:18:33] prepareRefresh (AbstractApplicationContext.java:510) 
+ Refreshing WebApplicationContext for namespace 'testController-servlet': startup date [Mon Jan 06 11:18:33 CST 2014]; parent: Root WebApplicationContext
+[INFO ] [2014-01-06 11:18:33] loadBeanDefinitions (XmlBeanDefinitionReader.java:315) 
+ Loading XML bean definitions from class path resource [config/spring-conf/application-mvc-quartz.xml]
+[INFO ] [2014-01-06 11:18:33] preInstantiateSingletons (DefaultListableBeanFactory.java:598) 
+ Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@beaa01: defining beans [jobController,jobResource,schedulerResource,triggerResource,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,quartzUrlMapping,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,quartzScheduler,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@15cd49f
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/add],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.add()
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/delete],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.delete()
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/view],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.view(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/jobListUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.jobListUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/jobListGrid],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.jobListGrid(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/editJobUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.editJobUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/addJobUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.addJobUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/removeJobTrigger],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.removeJobTrigger()
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/removeJobListener],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.removeJobListener()
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeOnce],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.executeOnce()
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeSimpleUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.executeSimpleUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeSimple],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.executeSimple()
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeCronUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.executeCronUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/createCronUI],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.createCronUI(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/executeCron],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.executeCron()
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/testCronExpression],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public cn.newcapec.framework.core.rest.Msg cn.newcapec.framework.plugins.quartz.controller.JobController.testCronExpression()
+[INFO ] [2014-01-06 11:18:33] registerHandlerMethod (AbstractHandlerMethodMapping.java:179) 
+ Mapped "{[/job/cronHelp],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.newcapec.framework.plugins.quartz.controller.JobController.cronHelp(org.springframework.ui.ModelMap)
+[INFO ] [2014-01-06 11:18:33] initSchedulerFactory (SchedulerFactoryBean.java:552) 
+ Loading Quartz config from [class path resource [quartz.properties]]
+[INFO ] [2014-01-06 11:18:33] instantiate (StdSchedulerFactory.java:1184) 
+ Using default implementation for ThreadExecutor
+[INFO ] [2014-01-06 11:18:33] initialize (SimpleThreadPool.java:268) 
+ Job execution threads will use class loader of thread: main
+[INFO ] [2014-01-06 11:18:33] <init> (SchedulerSignalerImpl.java:61) 
+ Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO ] [2014-01-06 11:18:33] <init> (QuartzScheduler.java:240) 
+ Quartz Scheduler v.2.2.1 created.
+[INFO ] [2014-01-06 11:18:33] initialize (JobStoreSupport.java:667) 
+ Using db table-based data access locking (synchronization).
+[INFO ] [2014-01-06 11:18:33] initialize (JobStoreCMT.java:145) 
+ JobStoreCMT initialized.
+[INFO ] [2014-01-06 11:18:33] initialize (QuartzScheduler.java:305) 
+ Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 5 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+[INFO ] [2014-01-06 11:18:33] instantiate (StdSchedulerFactory.java:1339) 
+ Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[INFO ] [2014-01-06 11:18:33] instantiate (StdSchedulerFactory.java:1343) 
+ Quartz scheduler version: 2.2.1
+[INFO ] [2014-01-06 11:18:33] setJobFactory (QuartzScheduler.java:2311) 
+ JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@12489c0
+[INFO ] [2014-01-06 11:18:33] start (DefaultLifecycleProcessor.java:334) 
+ Starting beans in phase 2147483647
+[INFO ] [2014-01-06 11:18:33] startScheduler (SchedulerFactoryBean.java:648) 
+ Starting Quartz Scheduler now
+[INFO ] [2014-01-06 11:18:34] recoverJobs (JobStoreSupport.java:861) 
+ Freed 0 triggers from 'acquired' / 'blocked' state.
+[INFO ] [2014-01-06 11:18:34] recoverJobs (JobStoreSupport.java:871) 
+ Recovering 0 jobs that were in-progress at the time of the last shut-down.
+[INFO ] [2014-01-06 11:18:34] recoverJobs (JobStoreSupport.java:884) 
+ Recovery complete.
+[INFO ] [2014-01-06 11:18:34] recoverJobs (JobStoreSupport.java:891) 
+ Removed 0 'complete' triggers.
+[INFO ] [2014-01-06 11:18:34] recoverJobs (JobStoreSupport.java:896) 
+ Removed 0 stale fired job entries.
+[INFO ] [2014-01-06 11:18:34] start (QuartzScheduler.java:575) 
+ Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[INFO ] [2014-01-06 11:18:34] initServletBean (FrameworkServlet.java:473) 
+ FrameworkServlet 'testController': initialization completed in 1469 ms
+[INFO ] [2014-01-06 11:18:37] postHandle (NspApplicationContextInterceptor.java:42) 
+ viewName : framework/plugins/quartz/job/job_list
+[ERROR] [2014-01-06 11:18:37] logVelocityMessage (CommonsLoggingLogSystem.java:49) 
+ ResourceManager : unable to find resource 'framework/plugins/quartz/job/job_list.html.html' in any resource loader.
