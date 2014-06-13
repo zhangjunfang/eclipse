@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<!-- 如果需要 restful 模式的服务  增加此配置文件 -->
+	<!-- <bean id="collectRoute" class="org.restlet.ext.spring.SpringRouter">
+		<property name="attachments">
+			<map>
+				行业资源
+				<entry key="/collect/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+						<lookup-method name="createResource" bean="collectResource" />
+					</bean>
+				</entry>
+				KET资源
+				<entry key="/termInfo/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+						<lookup-method name="createResource" bean="termInfoResource" />
+					</bean>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="termInfoRoute" class="org.restlet.ext.spring.SpringRouter">
+		<property name="attachments">
+			<map>
+				KET资源
+				<entry key="/termInfo/{method}">
+					<bean class="org.restlet.ext.spring.SpringFinder">
+						<lookup-method name="createResource" bean="termInfoResource" />
+					</bean>
+				</entry>
+			</map>
+		</property>
+	</bean> -->
+</beans>  
