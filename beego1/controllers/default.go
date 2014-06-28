@@ -6,6 +6,9 @@ import (
 	"github.com/astaxie/beego"
 	//"github.com/astaxie/beego/validation"
 	//"log"
+	//"mime/multipart"
+	"os"
+	//"path"
 	"strconv"
 	"strings"
 	"time"
@@ -131,4 +134,42 @@ func (this *MainController) DeletePerson() {
 		this.Data["sign"] = "操作成功"
 	}
 	this.TplNames = "sucess.html"
+}
+func (this *MainController) FileUpload() {
+
+	m := strings.ToLower(this.Ctx.Input.Method())
+	if m == "get" {
+		this.TplNames = "upload.tpl"
+	} else {
+		//var file multipart.File
+		//var header *multipart.FileHeader
+		//var err error
+
+		//file, header, err = this.GetFile("imgs")
+		//defer file.Close()
+		//if err != nil {
+		//	fmt.Println("操作失败")
+		//} else {
+		//	fmt.Println("操作成功")
+		//}
+		fi, err4 := os.Stat("/aa")
+		if err4 != nil {
+			os.IsExist(err4)
+			os.MkdirAll("/aa", 0777)
+		} else {
+			fi.IsDir()
+		}
+		os.NewFile(0777, "/aa/bb.jpg")
+		err2 := this.SaveToFile("imgs", "/aa/bb.jpg")
+		//fmt.Println(file, "============")
+		//fmt.Println(header, "============")
+		if err2 != nil {
+			fmt.Println("err2:===", err2)
+			this.Data["sign"] = "操作失败"
+		} else {
+			this.Data["sign"] = "操作成功"
+		}
+		this.TplNames = "sucess.html"
+	}
+
 }

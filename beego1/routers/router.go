@@ -15,5 +15,6 @@ func init() {
 	beego.Router("/updateBatch", &controllers.MainController{}, "get,post:UpdateBatch")
 	beego.Router("/deleteBatch", &controllers.MainController{}, "get,post:DeleteBatchPerson")
 	beego.Router("/delete", &controllers.MainController{}, "get,post:DeletePerson")
+	beego.Router("/upload", &controllers.MainController{}, "get,post:FileUpload")
 
 }
