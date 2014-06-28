@@ -4,12 +4,12 @@
 <title>《职业卫生安全评价，从入门到精通》网上报名</title>
 <meta charset="utf-8">
 <meta name="robots" content="all" />
-<meta name="author" content="huangxin" />
+<meta name="author" content="ocean" />
 <meta name="generator" content="Foreworld" />
 <meta http-equiv="content-type" content="text/html;charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon"
-	href="<%=basePath%>docs-assets/ico/favicon.png">
+<link rel="shortcut icon" href="/static/img/favicon.ico">
+<link rel="Bookmark" href="/static/img/favicon.ico">
 <!--[if lte IE 9]>
 		<link rel="stylesheet" type="text/css" href="/static/js/bsie/0.0.0/css/bootstrap-ie6.css">
 		<link rel="stylesheet" type="text/css" href="/static/js/bsie/0.0.0/css/ie.css">
@@ -51,15 +51,16 @@ body {
 </head>
 <body>
 	<section class="container">
+	    <center>{{.msg}}</center>
 		<form id="addFrm" method="post"  action="login2">
 			<h3>《职业卫生安全评价，从入门到精通》</h3>
 			<div class="form-group">
 				<input id="addFrm_xm" name="xm" type="text" class="form-control"
-					placeholder="姓名">
+					placeholder="姓名" value="{{.name}}">
 			</div>
 			<div class="form-group">
 				<input id="addFrm_sfzh" name="sfzh" type="text" class="form-control"
-					placeholder="身份证号">
+					placeholder="身份证号" value="{{.idCard}}">
 			</div>
 			<button id="btn_submit" type="submit" class="btn btn-primary">登录</button>
 			<a  class="btn btn-default" href="signup.jsp">报名</a>

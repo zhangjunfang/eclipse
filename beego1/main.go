@@ -6,5 +6,6 @@ import (
 )
 
 func main() {
-	beego.Run()
+	//beego.RunMode = ""
+	beego.Run("127.0.0.1:9090")
 }

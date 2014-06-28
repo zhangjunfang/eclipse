@@ -8,8 +8,8 @@
 <meta name="generator" content="Foreworld" />
 <meta http-equiv="content-type" content="text/html;charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
-
+<link rel="shortcut icon" href="/static/img/favicon.ico">
+<link rel="Bookmark" href="/static/img/favicon.ico">
 <!--[if lte IE 9]>
 		<link rel="stylesheet" type="text/css" href="/static/js/bsie/0.0.0/css/bootstrap-ie6.css">
 		<link rel="stylesheet" type="text/css" href="/static/js/bsie/0.0.0/css/ie.css">
