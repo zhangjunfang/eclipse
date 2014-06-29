@@ -16,5 +16,6 @@ func init() {
 	beego.Router("/deleteBatch", &controllers.MainController{}, "get,post:DeleteBatchPerson")
 	beego.Router("/delete", &controllers.MainController{}, "get,post:DeletePerson")
 	beego.Router("/upload", &controllers.MainController{}, "get,post:FileUpload")
+	beego.Router("/httpRedirect", &controllers.MainController{}, "get,post:HttpRedirect")
 
 }

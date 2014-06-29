@@ -7,8 +7,10 @@ import (
 	//"github.com/astaxie/beego/validation"
 	//"log"
 	//"mime/multipart"
+	"net/http"
 	"os"
-	//"path"
+	"path"
+	"runtime"
 	"strconv"
 	"strings"
 	"time"
@@ -136,7 +138,6 @@ func (this *MainController) DeletePerson() {
 	this.TplNames = "sucess.html"
 }
 func (this *MainController) FileUpload() {
-
 	m := strings.ToLower(this.Ctx.Input.Method())
 	if m == "get" {
 		this.TplNames = "upload.tpl"
@@ -152,19 +153,16 @@ func (this *MainController) FileUpload() {
 		//} else {
 		//	fmt.Println("操作成功")
 		//}
-		fi, err4 := os.Stat("/aa")
-		if err4 != nil {
-			os.IsExist(err4)
+		//fmt.Println(file, "============")
+		//fmt.Println(header, "============")
+		fmt.Println(GetCurrentPath, "============")
+		sign := IsDirExists("/aa")
+		if !sign {
 			os.MkdirAll("/aa", 0777)
-		} else {
-			fi.IsDir()
 		}
 		os.NewFile(0777, "/aa/bb.jpg")
 		err2 := this.SaveToFile("imgs", "/aa/bb.jpg")
-		//fmt.Println(file, "============")
-		//fmt.Println(header, "============")
 		if err2 != nil {
-			fmt.Println("err2:===", err2)
 			this.Data["sign"] = "操作失败"
 		} else {
 			this.Data["sign"] = "操作成功"
@@ -172,4 +170,45 @@ func (this *MainController) FileUpload() {
 		this.TplNames = "sucess.html"
 	}
 
+}
+func (this *MainController) HttpRedirect() {
+	this.Data["sign"] = "操作成功"
+	//this.
+	fmt.Println(http.StatusFound)
+	//http.Redirect(w, r, "/edit/"+"sucess.html", http.StatusFound)
+}
+
+//判断目录是否存在
+func IsDirExists(path string) bool {
+	fi, err := os.Stat(path)
+	if err != nil {
+		return os.IsExist(err)
+	} else {
+		return fi.IsDir()
+	}
+	return false
+}
+
+//判断文件是否存在
+func IsFileEXists(path string) bool {
+	if _, err := os.Stat(path); err == nil {
+		return true
+	} else {
+		return false
+	}
+}
+
+//获取当前所在的文件路径
+func GetCurrentPath() string {
+	path, err := os.Getwd()
+	if err == nil {
+		return path
+	}
+	return ""
+}
+
+//获取文件的扩展名称
+func GetExt(filename string) string {
+	runtime.Caller(0) //和下面代码实现同样的功能，但是符合操作系统的文件路径符
+	return path.Ext(filename)
 }
