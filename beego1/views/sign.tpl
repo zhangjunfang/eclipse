@@ -51,6 +51,7 @@ body {
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<b>《职业卫生安全评价，从入门到精通》网上报名</b>
+						<b>{{.msg}}</b>
 					</div>
 					<div class="panel-body">
 						<form id="addFrm" class="form-horizontal"  method="post"

@@ -3,6 +3,7 @@ package models
 import (
 	"fmt"
 	"github.com/astaxie/beego/orm"
+	"github.com/astaxie/beego/validation"
 	_ "github.com/go-sql-driver/mysql"
 	"strconv"
 	"time"
@@ -35,8 +36,22 @@ type Person struct {
 	Workoccupation string
 	Job            string
 	Professional   string
-	Telephone      string
+	Telephone      string `valid:"Mobile"`
 	Contactaddress string
+}
+
+// 如果你的 struct 实现了接口 validation.ValidFormer
+// 当 StructTag 中的测试都成功时，将会执行 Valid 函数进行自定义验证
+func (this *Person) Valid(v *validation.Validation) {
+	//if strings.Index(u.Name, "admin") != -1 {
+	//	// 通过 SetError 设置 Name 的错误信息，HasErrors 将会返回 true
+	//	v.SetError("Name", "名称里不能含有 admin")
+	//}
+	fmt.Println("v.HasErrors():", v.HasErrors())
+	if v.HasErrors() {
+		v.SetError("Telephone", "手机号码不正确")
+	}
+
 }
 
 func (this *Person) Add() bool {

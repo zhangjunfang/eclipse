@@ -7,6 +7,7 @@ import (
 	//"github.com/astaxie/beego/validation"
 	//"log"
 	//"mime/multipart"
+	//"github.com/astaxie/beego/validation"
 	"net/http"
 	"os"
 	"path"
@@ -53,6 +54,18 @@ func (this *MainController) AddUser() {
 	date := this.GetString("bysj")
 	fmt.Println("date:" + date)
 	p := &models.Person{Name: this.GetString("xm"), Ids: this.GetString("sfzh")}
+	//valid := validation.Validation{}
+	//b, _ := valid.Valid(p)
+	//if !b {
+	//	var msg []string
+	//	for _, err2 := range valid.Errors {
+	//		//log.Println(err.Key, err.Message)
+	//		msg = append(msg, err2.Key+":"+err2.Message)
+	//	}
+	//	this.Data["msg"] = strings.Join(msg, "<br>")
+	//	this.TplNames = "sign.tpl"
+	//	return
+	//}
 	var dates string
 	dates = strings.Trim(date, " ")
 	fmt.Println("dates:" + dates)
@@ -88,9 +101,16 @@ func (this *MainController) AddUser() {
 	//	fmt.Println("port:::::" + strconv.Itoa(this.Ctx.Input.Port()))
 	this.Data["url"] = this.Ctx.Input.Site() + ":" + strconv.Itoa(this.Ctx.Input.Port()) + "/redirect"
 	this.TplNames = "aa.tpl"
+	//这样可以实现客户端的跳转
+	//this.Ctx.Redirect(http.StatusFound, "upload")
 }
-func (this *MainController) Redirect() {
+
+//使用客户端js 实现的页面跳转
+//缺陷： 只能实现本应用内的页面跳转【服务器端的转发】
+
+func (this *MainController) Forward() {
 	this.TplNames = "sign.tpl"
+	//this.TplNames = "http://www.baidu.com/"
 }
 
 func (this *MainController) Update() {
@@ -171,10 +191,14 @@ func (this *MainController) FileUpload() {
 	}
 
 }
+
+//使用beego 内部的方法实现跳转【可以实现重定向】
 func (this *MainController) HttpRedirect() {
 	this.Data["sign"] = "操作成功"
 	//this.
-	fmt.Println(http.StatusFound)
+	fmt.Println("StatusFound", http.StatusFound)
+	this.Ctx.Redirect(http.StatusFound, "http://www.baidu.com/")
+	//this.Ctx.Output.Download()
 	//http.Redirect(w, r, "/edit/"+"sucess.html", http.StatusFound)
 }
 

@@ -10,7 +10,7 @@ func init() {
 	beego.Router("/login", &controllers.MainController{}, "post:Login")
 	beego.Router("/login2", &controllers.MainController{}, "post:Post")
 	beego.Router("/addUser", &controllers.MainController{}, "post:AddUser")
-	beego.Router("/redirect", &controllers.MainController{}, "get:Redirect")
+	beego.Router("/redirect", &controllers.MainController{}, "get:Forward")
 	beego.Router("/update", &controllers.MainController{}, "get,post:Update")
 	beego.Router("/updateBatch", &controllers.MainController{}, "get,post:UpdateBatch")
 	beego.Router("/deleteBatch", &controllers.MainController{}, "get,post:DeleteBatchPerson")
