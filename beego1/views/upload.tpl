@@ -8,7 +8,10 @@
 <body>
 <form action="upload" method="post" enctype="multipart/form-data" name="upload" id="upload">
   <label>
-  <input type="file" name="imgs" />
+  图片上传：<input type="file" name="imgs" />
+  </label>
+<label>
+ 性别： <input type="text" name="sex" />
   </label>
   <label>
   <input type="submit" name="Submit" value="提交" />

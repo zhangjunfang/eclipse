@@ -11,6 +11,7 @@ import (
 	"net/http"
 	"os"
 	"path"
+	"path/filepath"
 	"runtime"
 	"strconv"
 	"strings"
@@ -22,16 +23,9 @@ type MainController struct {
 }
 
 func (this *MainController) Get() {
-	//this.Data["Website"] = "beego.me"
-	//this.Data["Email"] = "astaxie@gmail.com"
 	this.TplNames = "index.tpl"
 }
 func (this *MainController) Login() {
-	fmt.Println("-----------------------------" + this.Ctx.Input.Url())
-	fmt.Println("-----------------------------" + this.GetString("xm"))
-
-	//this.Data["Website"] = "beego.me"
-	//this.Data["Email"] = "astaxie@gmail.com"
 	this.TplNames = "index.tpl"
 }
 func (this *MainController) Post() {
@@ -158,31 +152,45 @@ func (this *MainController) DeletePerson() {
 	this.TplNames = "sucess.html"
 }
 func (this *MainController) FileUpload() {
+	fmt.Println("性别：", this.GetString("sex"))
 	m := strings.ToLower(this.Ctx.Input.Method())
 	if m == "get" {
 		this.TplNames = "upload.tpl"
 	} else {
-		//var file multipart.File
-		//var header *multipart.FileHeader
-		//var err error
+		path := strings.Replace(GetCurrentPath(), "\\", "/", -1) + "/static/img/"
 
-		//file, header, err = this.GetFile("imgs")
-		//defer file.Close()
-		//if err != nil {
-		//	fmt.Println("操作失败")
-		//} else {
-		//	fmt.Println("操作成功")
+		//sign := IsDirExists(path)
+		//if !sign {
+		//	os.MkdirAll("/aa", 0777)
 		//}
-		//fmt.Println(file, "============")
-		//fmt.Println(header, "============")
-		fmt.Println(GetCurrentPath, "============")
-		sign := IsDirExists("/aa")
-		if !sign {
-			os.MkdirAll("/aa", 0777)
+		_, fileHeader, _ := this.Ctx.Request.FormFile("imgs")
+		fn := fileHeader.Filename
+		//filepath.Match()
+		duplicateName := filepath.Walk(path, func(path string, f os.FileInfo, err error) error {
+			if f == nil {
+				return err
+			}
+			if f.IsDir() {
+				return nil
+			}
+			if f.Name() == fn {
+				fmt.Println("Duplicate file name", f.Name())
+				return err
+			}
+			return nil
+		})
+		if duplicateName != nil {
+			this.Data["sign"] = "文件已经存在 ！！！"
+			this.TplNames = "sucess.html"
+			return
 		}
-		os.NewFile(0777, "/aa/bb.jpg")
-		err2 := this.SaveToFile("imgs", "/aa/bb.jpg")
+		fmt.Println("当前文件上传的文件是：", fn)
+		fmt.Println("当前文件上传的文件是：", path)
+		fmt.Println("当前文件上传的目录是：", path+"/"+fn)
+		os.NewFile(0777, path+fn)
+		err2 := this.SaveToFile("imgs", path+fn)
 		if err2 != nil {
+			fmt.Println("操作失败：", err2)
 			this.Data["sign"] = "操作失败"
 		} else {
 			this.Data["sign"] = "操作成功"
@@ -190,6 +198,10 @@ func (this *MainController) FileUpload() {
 		this.TplNames = "sucess.html"
 	}
 
+}
+func (this MainController) FileDown() bool {
+	this.Ctx.Output.Download("/aa/bb.jpg", "中国.jpg")
+	return true
 }
 
 //使用beego 内部的方法实现跳转【可以实现重定向】
