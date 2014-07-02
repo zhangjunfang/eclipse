@@ -13,7 +13,6 @@ func init() {
 	orm.Debug = true
 	orm.RegisterModel(new(Person))
 	orm.RegisterDriver("mysql", orm.DR_MySQL)
-
 	orm.RegisterDataBase("default", "mysql", "root:@/orm?charset=utf8", 30, 30)
 
 }

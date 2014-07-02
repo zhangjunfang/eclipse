@@ -4,10 +4,9 @@ import (
 	"beego1/models"
 	"fmt"
 	"github.com/astaxie/beego"
-	//"github.com/astaxie/beego/validation"
-	//"log"
-	//"mime/multipart"
-	//"github.com/astaxie/beego/validation"
+	"github.com/astaxie/beego/session"
+	_ "github.com/astaxie/beego/session/redis"
+	"html/template"
 	"net/http"
 	"os"
 	"path"
@@ -23,9 +22,13 @@ type MainController struct {
 }
 
 func (this *MainController) Get() {
+	this.Data["xsrfdata"] = template.HTML(this.XsrfFormHtml())
 	this.TplNames = "index.tpl"
 }
 func (this *MainController) Login() {
+	no := this.StartSession().Get("no")
+	fmt.Println("session 中的数据no 的值是：%v", no)
+	this.Data["xsrfdata"] = template.HTML(this.XsrfFormHtml())
 	this.TplNames = "index.tpl"
 }
 func (this *MainController) Post() {
@@ -40,6 +43,7 @@ func (this *MainController) Post() {
 		this.Data["msg"] = "信息不存在"
 		this.TplNames = "index.tpl"
 	} else {
+		this.Data["xsrfdata"] = template.HTML(this.XsrfFormHtml())
 		this.TplNames = "sign.tpl"
 	}
 
@@ -48,18 +52,6 @@ func (this *MainController) AddUser() {
 	date := this.GetString("bysj")
 	fmt.Println("date:" + date)
 	p := &models.Person{Name: this.GetString("xm"), Ids: this.GetString("sfzh")}
-	//valid := validation.Validation{}
-	//b, _ := valid.Valid(p)
-	//if !b {
-	//	var msg []string
-	//	for _, err2 := range valid.Errors {
-	//		//log.Println(err.Key, err.Message)
-	//		msg = append(msg, err2.Key+":"+err2.Message)
-	//	}
-	//	this.Data["msg"] = strings.Join(msg, "<br>")
-	//	this.TplNames = "sign.tpl"
-	//	return
-	//}
 	var dates string
 	dates = strings.Trim(date, " ")
 	fmt.Println("dates:" + dates)
@@ -92,7 +84,7 @@ func (this *MainController) AddUser() {
 	p.Unit = this.GetString("gzdw")
 	p.Workoccupation = this.GetString("zw")
 	this.Data["flag"] = p.Add()
-	//	fmt.Println("port:::::" + strconv.Itoa(this.Ctx.Input.Port()))
+	fmt.Println("port:::::" + strconv.Itoa(this.Ctx.Input.Port()))
 	this.Data["url"] = this.Ctx.Input.Site() + ":" + strconv.Itoa(this.Ctx.Input.Port()) + "/redirect"
 	this.TplNames = "aa.tpl"
 	//这样可以实现客户端的跳转
@@ -103,6 +95,7 @@ func (this *MainController) AddUser() {
 //缺陷： 只能实现本应用内的页面跳转【服务器端的转发】
 
 func (this *MainController) Forward() {
+	this.Data["xsrfdata"] = template.HTML(this.XsrfFormHtml())
 	this.TplNames = "sign.tpl"
 	//this.TplNames = "http://www.baidu.com/"
 }
@@ -116,7 +109,7 @@ func (this *MainController) Update() {
 	} else {
 		this.Data["sign"] = "操作成功"
 	}
-	this.TplNames = "sucess.html"
+	this.TplNames = "sucess.tpl"
 }
 func (this *MainController) UpdateBatch() {
 	p := &models.Person{}
@@ -127,7 +120,7 @@ func (this *MainController) UpdateBatch() {
 	} else {
 		this.Data["sign"] = "操作成功"
 	}
-	this.TplNames = "sucess.html"
+	this.TplNames = "sucess.tpl"
 }
 func (this *MainController) DeleteBatchPerson() {
 	p := &models.Person{}
@@ -138,7 +131,7 @@ func (this *MainController) DeleteBatchPerson() {
 	} else {
 		this.Data["sign"] = "操作成功"
 	}
-	this.TplNames = "sucess.html"
+	this.TplNames = "sucess.tpl"
 }
 func (this *MainController) DeletePerson() {
 	p := &models.Person{}
@@ -149,16 +142,17 @@ func (this *MainController) DeletePerson() {
 	} else {
 		this.Data["sign"] = "操作成功"
 	}
-	this.TplNames = "sucess.html"
+	this.TplNames = "sucess.tpl"
 }
 func (this *MainController) FileUpload() {
+
 	fmt.Println("性别：", this.GetString("sex"))
 	m := strings.ToLower(this.Ctx.Input.Method())
 	if m == "get" {
+		this.Data["xsrfdata"] = template.HTML(this.XsrfFormHtml())
 		this.TplNames = "upload.tpl"
 	} else {
 		path := strings.Replace(GetCurrentPath(), "\\", "/", -1) + "/static/img/"
-
 		//sign := IsDirExists(path)
 		//if !sign {
 		//	os.MkdirAll("/aa", 0777)
@@ -184,24 +178,44 @@ func (this *MainController) FileUpload() {
 			this.TplNames = "sucess.html"
 			return
 		}
-		fmt.Println("当前文件上传的文件是：", fn)
-		fmt.Println("当前文件上传的文件是：", path)
-		fmt.Println("当前文件上传的目录是：", path+"/"+fn)
-		os.NewFile(0777, path+fn)
-		err2 := this.SaveToFile("imgs", path+fn)
+		var temp = path + "/" + fn
+		os.NewFile(0777, temp)
+		err2 := this.SaveToFile("imgs", temp)
 		if err2 != nil {
 			fmt.Println("操作失败：", err2)
 			this.Data["sign"] = "操作失败"
 		} else {
 			this.Data["sign"] = "操作成功"
 		}
-		this.TplNames = "sucess.html"
+		this.TplNames = "sucess.tpl"
 	}
 
 }
-func (this MainController) FileDown() bool {
-	this.Ctx.Output.Download("/aa/bb.jpg", "中国.jpg")
-	return true
+func (this MainController) FileDown() {
+	fn := "bb.jpg"
+	path := strings.Replace(GetCurrentPath(), "\\", "/", -1) + "/static/img/"
+	temp := path + fn
+	ext := GetExt(temp)
+	//fmt.Println("ext::::::::", ext)
+	dn := "aa" + ext
+	this.Ctx.Output.Download(temp, dn)
+}
+
+func (this *MainController) SessionTest() {
+	var sess session.SessionStore = this.StartSession()
+	fmt.Println("session::::::", sess.SessionID())
+	no := sess.Get("no")
+	if no == nil {
+		fmt.Println("no:::::::: %v", no)
+		sess.Set("no", 1)
+	} else {
+		fmt.Println("no::::2222:::: %v", no)
+		sess.Set("no", (no.(int))+1)
+		this.Data["no"] = (no.(int)) + 1
+	}
+	fmt.Println("no::::33333:::: %v", no)
+	this.Data["sign"] = "操作成功"
+	this.TplNames = "sucess.tpl"
 }
 
 //使用beego 内部的方法实现跳转【可以实现重定向】
@@ -211,7 +225,7 @@ func (this *MainController) HttpRedirect() {
 	fmt.Println("StatusFound", http.StatusFound)
 	this.Ctx.Redirect(http.StatusFound, "http://www.baidu.com/")
 	//this.Ctx.Output.Download()
-	//http.Redirect(w, r, "/edit/"+"sucess.html", http.StatusFound)
+	//http.Redirect(w, r, "/edit/"+"sucess.tpl", http.StatusFound)
 }
 
 //判断目录是否存在

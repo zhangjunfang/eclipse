@@ -60,6 +60,7 @@ body {
 								<label for="addFrm_xm" class="col-sm-2 control-label"><span
 									class="olx-form-required">*</span>姓名</label>
 								<div class="col-sm-4">
+								 {{ .xsrfdata }}
 									<input type="text" class="form-control" id="addFrm_xm"
 										name="xm" placeholder="姓名">
 								</div>

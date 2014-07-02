@@ -55,6 +55,7 @@ body {
 		<form id="addFrm" method="post"  action="login2">
 			<h3>《职业卫生安全评价，从入门到精通》</h3>
 			<div class="form-group">
+			 {{ .xsrfdata }}
 				<input id="addFrm_xm" name="xm" type="text" class="form-control"
 					placeholder="姓名" value="{{.name}}">
 			</div>
