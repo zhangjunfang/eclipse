@@ -19,5 +19,7 @@ func init() {
 	beego.Router("/httpredirect", &controllers.MainController{}, "get,post:HttpRedirect")
 	beego.Router("/httpdown", &controllers.MainController{}, "get,post:FileDown")
 	beego.Router("/sessiontest", &controllers.MainController{}, "get,post:SessionTest")
-
+	beego.Router("/json", &controllers.MainController{}, "get,post:Tojson")
+	beego.Router("/xml", &controllers.MainController{}, "get,post:Toxml")
+	beego.Router("/jsonp", &controllers.MainController{}, "get,post:Tojson")
 }

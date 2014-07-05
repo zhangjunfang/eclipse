@@ -9,6 +9,7 @@
 <form action="upload" method="post" enctype="multipart/form-data" name="upload" id="upload">
   <label>
 {{.xsrfdata}}
+{{.token}}
   图片上传：<input type="file" name="imgs" />
   </label>
 <label>

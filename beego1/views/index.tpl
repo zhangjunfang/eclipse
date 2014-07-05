@@ -9,6 +9,8 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="/static/img/favicon.ico">
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="Bookmark" href="/static/img/favicon.ico">
 <!--[if lte IE 9]>
 		<link rel="stylesheet" type="text/css" href="/static/js/bsie/0.0.0/css/bootstrap-ie6.css">
@@ -56,6 +58,7 @@ body {
 			<h3>《职业卫生安全评价，从入门到精通》</h3>
 			<div class="form-group">
 			 {{ .xsrfdata }}
+			{{.token}}
 				<input id="addFrm_xm" name="xm" type="text" class="form-control"
 					placeholder="姓名" value="{{.name}}">
 			</div>

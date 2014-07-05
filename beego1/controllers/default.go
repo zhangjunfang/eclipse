@@ -2,11 +2,15 @@ package controllers
 
 import (
 	"beego1/models"
+	"bytes"
+	"crypto/md5"
+	"errors"
 	"fmt"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/session"
 	_ "github.com/astaxie/beego/session/redis"
 	"html/template"
+	"io"
 	"net/http"
 	"os"
 	"path"
@@ -23,23 +27,30 @@ type MainController struct {
 
 func (this *MainController) Get() {
 	this.Data["xsrfdata"] = template.HTML(this.XsrfFormHtml())
+	this.Data["token"] = template.HTML(TokenFormHtml())
+	var sess session.SessionStore = this.StartSession()
+	no := sess.Get("no")
+	fmt.Println("no:::", no)
+	fmt.Println("sessionid:::", sess.SessionID())
 	this.TplNames = "index.tpl"
 }
 func (this *MainController) Login() {
 	no := this.StartSession().Get("no")
 	fmt.Println("session 中的数据no 的值是：%v", no)
 	this.Data["xsrfdata"] = template.HTML(this.XsrfFormHtml())
+	this.Data["token"] = template.HTML(TokenFormHtml())
 	this.TplNames = "index.tpl"
 }
 func (this *MainController) Post() {
-	fmt.Println("-----------------post------------" + this.Ctx.Input.Url())
-	fmt.Println("-----------------------------" + this.GetString("xm"))
+	//fmt.Println("-----------------post------------" + this.Ctx.Input.Url())
+	//fmt.Println("-----------------------------" + this.GetString("xm"))
 	p := &models.Person{Name: this.GetString("xm"), Ids: this.GetString("sfzh")}
 	fmt.Println(p)
 	sign := p.Query()
 	if !sign {
 		this.Data["name"] = p.Name
 		this.Data["idCard"] = p.Ids
+		this.Data["token"] = template.HTML(TokenFormHtml())
 		this.Data["msg"] = "信息不存在"
 		this.TplNames = "index.tpl"
 	} else {
@@ -48,7 +59,15 @@ func (this *MainController) Post() {
 	}
 
 }
+
+/**
+  实现添加功能
+  但是没有实现 表单数据到结构体的映射 ！！！！！！！！！！！！！！！！！！！
+*/
 func (this *MainController) AddUser() {
+	//var aa *models.User
+	//this.ParseForm(aa)
+	//fmt.Println("通过tag 标签 解析到结构体：：", aa.Name)
 	date := this.GetString("bysj")
 	fmt.Println("date:" + date)
 	p := &models.Person{Name: this.GetString("xm"), Ids: this.GetString("sfzh")}
@@ -96,6 +115,7 @@ func (this *MainController) AddUser() {
 
 func (this *MainController) Forward() {
 	this.Data["xsrfdata"] = template.HTML(this.XsrfFormHtml())
+	this.Data["token"] = template.HTML(TokenFormHtml())
 	this.TplNames = "sign.tpl"
 	//this.TplNames = "http://www.baidu.com/"
 }
@@ -109,6 +129,7 @@ func (this *MainController) Update() {
 	} else {
 		this.Data["sign"] = "操作成功"
 	}
+	this.Data["token"] = template.HTML(TokenFormHtml())
 	this.TplNames = "sucess.tpl"
 }
 func (this *MainController) UpdateBatch() {
@@ -120,6 +141,7 @@ func (this *MainController) UpdateBatch() {
 	} else {
 		this.Data["sign"] = "操作成功"
 	}
+	this.Data["token"] = template.HTML(TokenFormHtml())
 	this.TplNames = "sucess.tpl"
 }
 func (this *MainController) DeleteBatchPerson() {
@@ -131,6 +153,7 @@ func (this *MainController) DeleteBatchPerson() {
 	} else {
 		this.Data["sign"] = "操作成功"
 	}
+	this.Data["token"] = template.HTML(TokenFormHtml())
 	this.TplNames = "sucess.tpl"
 }
 func (this *MainController) DeletePerson() {
@@ -142,45 +165,51 @@ func (this *MainController) DeletePerson() {
 	} else {
 		this.Data["sign"] = "操作成功"
 	}
+	this.Data["token"] = template.HTML(TokenFormHtml())
 	this.TplNames = "sucess.tpl"
 }
 func (this *MainController) FileUpload() {
-
 	fmt.Println("性别：", this.GetString("sex"))
 	m := strings.ToLower(this.Ctx.Input.Method())
 	if m == "get" {
+		this.Data["token"] = template.HTML(TokenFormHtml())
 		this.Data["xsrfdata"] = template.HTML(this.XsrfFormHtml())
 		this.TplNames = "upload.tpl"
 	} else {
-		path := strings.Replace(GetCurrentPath(), "\\", "/", -1) + "/static/img/"
-		//sign := IsDirExists(path)
+		pathstring := path.Join(GetCurrentPath(), "/static/img/")
+		//pathstring := strings.Replace(GetCurrentPath(), "\\", "/", -1) + "/static/img/"
+		//sign := IsDirExists(pathstring)
 		//if !sign {
 		//	os.MkdirAll("/aa", 0777)
 		//}
 		_, fileHeader, _ := this.Ctx.Request.FormFile("imgs")
 		fn := fileHeader.Filename
-		//filepath.Match()
-		duplicateName := filepath.Walk(path, func(path string, f os.FileInfo, err error) error {
+		duplicateName := filepath.Walk(pathstring, func(pathstring string, f os.FileInfo, err error) error {
 			if f == nil {
-				return err
+				return errors.New("上传文件目录为空")
 			}
 			if f.IsDir() {
 				return nil
 			}
 			if f.Name() == fn {
 				fmt.Println("Duplicate file name", f.Name())
-				return err
+				fmt.Println("err  content", err)
+				return errors.New("Duplicate file name")
 			}
 			return nil
 		})
 		if duplicateName != nil {
 			this.Data["sign"] = "文件已经存在 ！！！"
-			this.TplNames = "sucess.html"
+			this.TplNames = "sucess.tpl"
 			return
 		}
-		var temp = path + "/" + fn
-		os.NewFile(0777, temp)
-		err2 := this.SaveToFile("imgs", temp)
+		//var temp = pathstring + "/" + fn
+		var buf bytes.Buffer
+		buf.WriteString(pathstring)
+		buf.WriteString("/")
+		buf.WriteString(fn)
+		os.NewFile(0777, buf.String())
+		err2 := this.SaveToFile("imgs", buf.String())
 		if err2 != nil {
 			fmt.Println("操作失败：", err2)
 			this.Data["sign"] = "操作失败"
@@ -189,12 +218,13 @@ func (this *MainController) FileUpload() {
 		}
 		this.TplNames = "sucess.tpl"
 	}
-
 }
 func (this MainController) FileDown() {
+	//fn实际项目中这个名称可能来自于客户端或者服务器端的映射真正的文件名称
 	fn := "bb.jpg"
-	path := strings.Replace(GetCurrentPath(), "\\", "/", -1) + "/static/img/"
-	temp := path + fn
+	//pathString := strings.Replace(GetCurrentPath(), "\\", "/", -1) +
+	//pathString:=path.Join(GetCurrentPath(),"/static/img/",fn)
+	temp := path.Join(GetCurrentPath(), "/static/img/", fn)
 	ext := GetExt(temp)
 	//fmt.Println("ext::::::::", ext)
 	dn := "aa" + ext
@@ -203,17 +233,15 @@ func (this MainController) FileDown() {
 
 func (this *MainController) SessionTest() {
 	var sess session.SessionStore = this.StartSession()
-	fmt.Println("session::::::", sess.SessionID())
 	no := sess.Get("no")
 	if no == nil {
-		fmt.Println("no:::::::: %v", no)
 		sess.Set("no", 1)
 	} else {
-		fmt.Println("no::::2222:::: %v", no)
 		sess.Set("no", (no.(int))+1)
 		this.Data["no"] = (no.(int)) + 1
 	}
-	fmt.Println("no::::33333:::: %v", no)
+	fmt.Println("no:::", no)
+	this.Data["token"] = template.HTML(TokenFormHtml())
 	this.Data["sign"] = "操作成功"
 	this.TplNames = "sucess.tpl"
 }
@@ -221,11 +249,31 @@ func (this *MainController) SessionTest() {
 //使用beego 内部的方法实现跳转【可以实现重定向】
 func (this *MainController) HttpRedirect() {
 	this.Data["sign"] = "操作成功"
-	//this.
 	fmt.Println("StatusFound", http.StatusFound)
 	this.Ctx.Redirect(http.StatusFound, "http://www.baidu.com/")
 	//this.Ctx.Output.Download()
 	//http.Redirect(w, r, "/edit/"+"sucess.tpl", http.StatusFound)
+}
+
+//json
+func (this *MainController) Tojson() {
+	p := &models.Person{}
+	this.Data["json"] = p.QueryALL()
+	this.ServeJson()
+}
+
+//jsonp
+func (this *MainController) Tojsonp() {
+	p := &models.Person{}
+	this.Data["jsonp"] = p.QueryALL()
+	this.ServeJsonp()
+}
+
+//xml
+func (this *MainController) Toxml() {
+	p := &models.Person{}
+	this.Data["xml"] = p.QueryALL()
+	this.ServeXml()
 }
 
 //判断目录是否存在
@@ -261,4 +309,15 @@ func GetCurrentPath() string {
 func GetExt(filename string) string {
 	runtime.Caller(0) //和下面代码实现同样的功能，但是符合操作系统的文件路径符
 	return path.Ext(filename)
+}
+func TokenFormHtml() string {
+	return "<input type=\"hidden\" name=\"token\" value=\"" +
+		GetToken() + "\"/>"
+}
+func GetToken() string {
+	cruTime := time.Now().Unix()
+	h := md5.New()
+	io.WriteString(h, strconv.FormatInt(cruTime, 10))
+	token := fmt.Sprintf("%x", h.Sum(nil))
+	return token
 }

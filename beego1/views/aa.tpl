@@ -11,6 +11,7 @@
 <link rel="Bookmark" href="/static/img/favicon.ico">
 </head>
 <body>
+{{.token}}
 <script type="text/javascript">
      alert({{.flag}});
 	 window.location={{.url}}

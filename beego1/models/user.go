@@ -19,8 +19,8 @@ func init() {
 
 //模型命名遵循驼峰命名，如果存在驼峰命名【结构体或者字段】，自动生成下划线连键各个单词
 type Person struct {
-	Id             int32 `PK` //如果主键默认不是id，必须标注为PK
-	Name           string
+	Id             int32  `form:"id" json:"id" PK` //如果主键默认不是id，必须标注为PK
+	Name           string `form:"xm" json:"name"`
 	Sex            string
 	Ids            string
 	Politicsstatus string
@@ -37,6 +37,11 @@ type Person struct {
 	Professional   string
 	Telephone      string `valid:"Mobile"`
 	Contactaddress string
+}
+
+type User struct {
+	Id   int32  `form:"_" PK` //如果主键默认不是id，必须标注为PK
+	Name string `form:"xm,text,年龄：" json:"name"`
 }
 
 // 如果你的 struct 实现了接口 validation.ValidFormer
@@ -145,6 +150,17 @@ func (this *Person) DeletePerson() bool {
 		return true
 	}
 	return true
+}
+
+//查询所有的数据
+func (this *Person) QueryALL() []*Person {
+	p := orm.NewOrm()
+	p.Using("default")
+	var pers []*Person
+	//p.Raw("SELECT * FROM person").QueryRows(pers)
+	p.QueryTable(this).All(&pers)
+
+	return pers
 }
 func (user *Person) String() string {
 	return "id:" + strconv.FormatInt(int64(user.Id), 10) + " name:" + user.Name + " ids:" + user.Ids

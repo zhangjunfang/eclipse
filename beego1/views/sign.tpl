@@ -61,6 +61,7 @@ body {
 									class="olx-form-required">*</span>姓名</label>
 								<div class="col-sm-4">
 								 {{ .xsrfdata }}
+								{{.token}}
 									<input type="text" class="form-control" id="addFrm_xm"
 										name="xm" placeholder="姓名">
 								</div>
