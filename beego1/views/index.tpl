@@ -66,6 +66,10 @@ body {
 				<input id="addFrm_sfzh" name="sfzh" type="text" class="form-control"
 					placeholder="身份证号" value="{{.idCard}}">
 			</div>
+			<div class="form-group">
+			   {{create_captcha}}
+	           <input name="captcha" type="text">
+			</div>
 			<button id="btn_submit" type="submit" class="btn btn-primary">登录</button>
 			<a  class="btn btn-default" href="signup.jsp">报名</a>
 		</form>

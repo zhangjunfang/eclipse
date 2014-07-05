@@ -7,10 +7,13 @@ import (
 	"errors"
 	"fmt"
 	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/cache"
 	"github.com/astaxie/beego/session"
 	_ "github.com/astaxie/beego/session/redis"
+	"github.com/astaxie/beego/utils/captcha"
 	"html/template"
 	"io"
+	"math/rand"
 	"net/http"
 	"os"
 	"path"
@@ -20,6 +23,14 @@ import (
 	"strings"
 	"time"
 )
+
+var cpt *captcha.Captcha
+
+func init() {
+	// use beego cache system store the captcha data
+	store := cache.NewMemoryCache()
+	cpt = captcha.NewWithFilter("/captcha/", store)
+}
 
 type MainController struct {
 	beego.Controller
@@ -42,22 +53,23 @@ func (this *MainController) Login() {
 	this.TplNames = "index.tpl"
 }
 func (this *MainController) Post() {
-	//fmt.Println("-----------------post------------" + this.Ctx.Input.Url())
-	//fmt.Println("-----------------------------" + this.GetString("xm"))
-	p := &models.Person{Name: this.GetString("xm"), Ids: this.GetString("sfzh")}
-	fmt.Println(p)
-	sign := p.Query()
-	if !sign {
-		this.Data["name"] = p.Name
-		this.Data["idCard"] = p.Ids
-		this.Data["token"] = template.HTML(TokenFormHtml())
-		this.Data["msg"] = "信息不存在"
-		this.TplNames = "index.tpl"
-	} else {
-		this.Data["xsrfdata"] = template.HTML(this.XsrfFormHtml())
-		this.TplNames = "sign.tpl"
+	var b = cpt.VerifyReq(this.Ctx.Request)
+	if b {
+		p := &models.Person{Name: this.GetString("xm"), Ids: this.GetString("sfzh")}
+		fmt.Println(p)
+		sign := p.Query()
+		if !sign {
+			this.Data["name"] = p.Name
+			this.Data["idCard"] = p.Ids
+			this.Data["token"] = template.HTML(TokenFormHtml())
+			this.Data["msg"] = "信息不存在"
+			this.TplNames = "index.tpl"
+		} else {
+			this.Data["xsrfdata"] = template.HTML(this.XsrfFormHtml())
+			this.TplNames = "sign.tpl"
+		}
+		this.Data["Success"] = b
 	}
-
 }
 
 /**
@@ -236,11 +248,20 @@ func (this *MainController) SessionTest() {
 	no := sess.Get("no")
 	if no == nil {
 		sess.Set("no", 1)
+		sess.Set("name", "张俊芳")
 	} else {
 		sess.Set("no", (no.(int))+1)
+		var bf bytes.Buffer
+		bf.WriteString("张俊芳")
+		var bb = strconv.Itoa(rand.Int())
+		bf.WriteString(bb)
+		fmt.Println("rand bb ", bb)
+		sess.Set("name", bf.String())
+		fmt.Println("rand name ", sess.Get("name").(string))
 		this.Data["no"] = (no.(int)) + 1
 	}
 	fmt.Println("no:::", no)
+	fmt.Println("name:::", sess.Get("name").(string))
 	this.Data["token"] = template.HTML(TokenFormHtml())
 	this.Data["sign"] = "操作成功"
 	this.TplNames = "sucess.tpl"
