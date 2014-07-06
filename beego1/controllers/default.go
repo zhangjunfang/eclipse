@@ -280,6 +280,7 @@ func (this *MainController) HttpRedirect() {
 func (this *MainController) Tojson() {
 	p := &models.Person{}
 	this.Data["json"] = p.QueryALL()
+	beego.Info("查询数据成功", "log 测试 是否成功！！！！！")
 	this.ServeJson()
 }
 
@@ -295,6 +296,17 @@ func (this *MainController) Toxml() {
 	p := &models.Person{}
 	this.Data["xml"] = p.QueryALL()
 	this.ServeXml()
+}
+
+//page layout
+func (this *MainController) Topage() {
+	this.Data["name"] = "张伯雨"
+	this.Layout = "layout/layout_blog.tpl"
+	this.TplNames = "layout/index.tpl"
+	this.LayoutSections = make(map[string]string)
+	this.LayoutSections["HtmlHead"] = "layout/html_head.tpl"
+	this.LayoutSections["Scripts"] = "layout/scripts.tpl"
+	this.LayoutSections["Sidebar"] = ""
 }
 
 //判断目录是否存在

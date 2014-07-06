@@ -21,5 +21,6 @@ func init() {
 	beego.Router("/sessiontest", &controllers.MainController{}, "get,post:SessionTest")
 	beego.Router("/json", &controllers.MainController{}, "get,post:Tojson")
 	beego.Router("/xml", &controllers.MainController{}, "get,post:Toxml")
-	beego.Router("/jsonp", &controllers.MainController{}, "get,post:Tojson")
+	beego.Router("/jsonp", &controllers.MainController{}, "get,post:Tojsonp")
+	beego.Router("/page", &controllers.MainController{}, "get,post:Topage")
 }

@@ -19,8 +19,8 @@ func init() {
 
 //模型命名遵循驼峰命名，如果存在驼峰命名【结构体或者字段】，自动生成下划线连键各个单词
 type Person struct {
-	Id             int32  `form:"id" json:"id" PK` //如果主键默认不是id，必须标注为PK
-	Name           string `form:"xm" json:"name"`
+	Id             int32 `PK` //如果主键默认不是id，必须标注为PK
+	Name           string
 	Sex            string
 	Ids            string
 	Politicsstatus string
