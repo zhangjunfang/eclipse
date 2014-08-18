@@ -1,0 +1,62 @@
+<style>
+#configTable form{padding:10px;margin-right: 20px}
+</style>
+<div id="bd0">
+<table width="100%" id="configTable">
+<tr>
+<td valign="top" style="width:61.8%">
+<b>req rewrite</b>&nbsp; file is:<font color=gray>[req_rewrite_{{.port}}.js]</font>
+<form  method="post" action="/config" autocomplete="off" target="ifr_form">
+<textarea style="width:100%;height:{{.jsHeight}}px" name="js">{{.rewriteJs}}</textarea>
+<input type="hidden" name="type" value="js">
+<div style="text-align:right"><input type="submit" class="btn btn-primary" value="save"></div>
+</form>
+</td>
+<td valign="top">
+<pre>
+<b>req demo:</b>
+url : http://www.example.com/album/list?cid=126
+schema : http
+host : www.example.com
+port : 80
+path : /album/list
+get: {cid:[123]}
+post: {}
+username : 
+password : 
+method: GET
+===============================================
+//demo code:
+if(req.host=="www.baidu.com"){
+   req.host="www.163.com"
+   req.host_addr="127.0.0.0:81" // send req to 127.0.0.1:81
+   form_get.add("a","a")
+   //form_post.set("d","a")
+}
+</pre>
+</td>
+</tr>
+
+
+<tr>
+<td width="50%" valign="top">
+<div><b>hosts</b>&nbsp;file is:<font color=gray>[hosts_{{.port}}]</font></div>
+<form  method="post" action="/config" autocomplete="off" target="ifr_form">
+<textarea style="width:100%;height:100px" name="hosts">{{.hosts}}</textarea>
+<input type="hidden" name="type" value="hosts">
+<div style="text-align:right"><input type="submit" class="btn btn-primary" value="save"></div>
+</form>
+</td>
+<td valign="top">
+<br/><br/>
+<pre>
+example:
+www.baidu.com 127.0.0.1
+www.baidu.com:81 10.0.2.2:8080
+</pre>
+</td>
+</tr>
+</table>
+
+<iframe name="ifr_form" style="display:none;"></iframe>  
+</div>

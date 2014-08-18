@@ -1,0 +1,32 @@
+<html>
+    <body>
+        这个程序通过验证访问你的谷歌用户信息。你的用户详细信息是:
+        <br />
+        <table border="1">
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>GivenName</td>
+                <td>FamilyName</td>
+                <td>Link</td>
+                <td>Picture</td>
+                <td>Gender</td>
+                <td>Birthday</td>
+                <td>Locale</td>
+            </tr>
+            {{range .}}
+            <tr>
+                <td>{{.ID}}</td>
+                <td>{{.Name}}</td>
+                <td>{{.GivenName}}</td>
+                <td>{{.FamilyName}}</td>
+                <td>{{.Link}}</td>
+                <td>{{.Picture}}</td>
+                <td>{{.Gender}}</td>
+                <td>{{.Birthday}}</td>
+                <td>{{.Locale}}</td>
+            </tr>
+            {{end}}
+        </table>
+    </body>
+</html>
